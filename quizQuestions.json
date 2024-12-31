@@ -1,0 +1,255 @@
+[
+    {
+      "question": "What is the primary purpose of using fiber-optic cables in networking?",
+      "options": [
+        "High-speed data transmission",
+        "Cost efficiency",
+        "Short-distance connections",
+        "Ease of installation"
+      ],
+      "answer": "High-speed data transmission",
+      "explanation": "Fiber-optic cables are designed for high-speed data transmission, making them ideal for scenarios requiring fast and reliable communication over long distances."
+    },
+    {
+      "question": "Which of the following are networking devices?",
+      "options": ["Router", "Switch", "Hub", "Spreadsheet"],
+      "answer": ["Router", "Switch", "Hub"],
+      "type": "multiple",
+      "explanation": "Routers, switches, and hubs are networking devices."
+    },
+    {
+      "question": "What is the primary purpose of a router?",
+      "options": ["Forward packets", "Store data", "Encrypt data", "Broadcast data"],
+      "answer": "Forward packets",
+      "type": "single",
+      "explanation": "Routers forward packets between different networks."
+    },
+    {
+      "question": "Which command is used to enable a router interface?",
+      "options": [
+        "shutdown",
+        "enable",
+        "no shutdown",
+        "configure terminal"
+      ],
+      "answer": "no shutdown",
+      "type": "single",
+      "explanation": "The 'no shutdown' command activates a router interface that is administratively down, allowing it to function."
+    },
+    {
+      "question": "What type of cable is used to connect a switch to a router?",
+      "options": [
+        "Crossover cable",
+        "Straight-through cable",
+        "Fiber-optic cable",
+        "Coaxial cable"
+      ],
+      "answer": "Straight-through cable",
+      "type": "single",
+      "explanation": "Straight-through cables are used to connect devices of different types, such as switches and routers."
+    },
+    {
+      "question": "Why is VLAN1 commonly used for switch management?",
+      "options": [
+        "It is the default VLAN on most switches",
+        "It supports high-speed connections",
+        "It is designed for Layer 3 routing",
+        "It simplifies cable management"
+      ],
+      "answer": "It is the default VLAN on most switches",
+      "type": "single",
+      "explanation": "VLAN1 is the default VLAN on many switches and is often used for management purposes unless explicitly changed."
+    },
+    {
+      "question": "What is the purpose of the `show ip interface brief` command?",
+      "options": [
+        "Display the routing table",
+        "Verify interface status and IP configuration",
+        "Test connectivity",
+        "Enable VLANs"
+      ],
+      "answer": "Verify interface status and IP configuration",
+      "type": "single",
+      "explanation": "The 'show ip interface brief' command provides a quick summary of interface statuses and their IP configurations, helping with troubleshooting."
+    },
+    {
+      "question": "What happens if two devices in the same network have the same IP address?",
+      "options": [
+        "Improved network performance",
+        "IP conflict leading to communication issues",
+        "Increased bandwidth",
+        "Automatic resolution by the router"
+      ],
+      "answer": "IP conflict leading to communication issues",
+      "type": "single",
+      "explanation": "When two devices have the same IP address, it causes an IP conflict, leading to failures in communication for both devices."
+    },
+    {
+      "question": "Which tool in Packet Tracer is used for quick packet delivery verification?",
+      "options": [
+        "Ping",
+        "Traceroute",
+        "Simple PDU",
+        "ARP table"
+      ],
+      "answer": "Simple PDU",
+      "type": "single",
+      "explanation": "The Simple PDU tool in Packet Tracer allows users to test connectivity between devices quickly by sending a basic packet."
+    },
+    {
+      "question": "What is the minimum number of cables required for a fiber-optic connection?",
+      "options": [
+        "One",
+        "Two",
+        "Three",
+        "Four"
+      ],
+      "answer": "Two",
+      "type": "single",
+      "explanation": "Fiber-optic connections typically require two cables: one for transmitting data and another for receiving data."
+    },
+    {
+      "question": "What does a red arrow in Packet Tracer signify?",
+      "options": [
+        "A successful connection",
+        "An inactive or misconfigured link",
+        "High network traffic",
+        "Cable type mismatch"
+      ],
+      "answer": "An inactive or misconfigured link",
+      "type": "single",
+      "explanation": "A red arrow in Packet Tracer indicates that the link is inactive, often due to configuration issues or improper cabling."
+    },
+    {
+      "question": "Which command shows the MAC-to-IP mappings on a router?",
+      "options": [
+        "show ip route",
+        "show mac-address-table",
+        "show arp",
+        "show interfaces"
+      ],
+      "answer": "show arp",
+      "type": "single",
+      "explanation": "The 'show arp' command displays the ARP table, which maps IP addresses to MAC addresses for devices in the network."
+    },
+    {
+        "question": "What is the primary purpose of a default gateway in a network?",
+        "options": [
+          "Connect devices within the same subnet",
+          "Facilitate communication with external networks",
+          "Provide IP addresses to devices",
+          "Block unauthorized access"
+        ],
+        "answer": "Facilitate communication with external networks",
+        "type": "single",
+        "explanation": "The default gateway acts as an access point or IP router for devices in a network to communicate with devices in different networks."
+      },
+      {
+        "question": "Which device is responsible for resolving domain names to IP addresses?",
+        "options": [
+          "DHCP Server",
+          "DNS Server",
+          "Proxy Server",
+          "Firewall"
+        ],
+        "answer": "DNS Server",
+        "type": "single",
+        "explanation": "A DNS server translates human-readable domain names (like www.example.com) into IP addresses used by computers to identify each other on the network."
+      },
+      {
+        "question": "What does the command `ping` primarily test?",
+        "options": [
+          "Network connectivity",
+          "Routing table entries",
+          "IP configuration",
+          "Interface speed"
+        ],
+        "answer": "Network connectivity",
+        "type": "single",
+        "explanation": "The `ping` command sends ICMP Echo Requests to test connectivity between devices on a network and measures the response time."
+      },
+      {
+        "question": "What is the function of a DHCP server?",
+        "options": [
+          "Resolve domain names to IP addresses",
+          "Assign IP addresses dynamically",
+          "Route data packets",
+          "Encrypt network traffic"
+        ],
+        "answer": "Assign IP addresses dynamically",
+        "type": "single",
+        "explanation": "A DHCP server automatically assigns IP addresses and other network configuration settings to devices on a network."
+      },
+      {
+        "question": "Which network topology connects all devices to a central point?",
+        "options": [
+          "Mesh",
+          "Star",
+          "Bus",
+          "Ring"
+        ],
+        "answer": "Star",
+        "type": "single",
+        "explanation": "In a star topology, all devices are connected to a central device, such as a switch or hub, simplifying troubleshooting and maintenance."
+      },
+      {
+        "question": "What does NAT stand for in networking?",
+        "options": [
+          "Network Address Translation",
+          "Network Access Transmission",
+          "Node Addressing Table",
+          "New Access Technology"
+        ],
+        "answer": "Network Address Translation",
+        "type": "single",
+        "explanation": "NAT is a method used to map private IP addresses to a public IP address, allowing multiple devices to share a single public IP for internet access."
+      },
+      {
+        "question": "What protocol is used to securely transfer files over the internet?",
+        "options": [
+          "FTP",
+          "SFTP",
+          "HTTP",
+          "SMTP"
+        ],
+        "answer": "SFTP",
+        "type": "single",
+        "explanation": "SFTP (Secure File Transfer Protocol) provides a secure way to transfer files over the internet by encrypting the data during transit."
+      },
+      {
+        "question": "Which layer of the OSI model handles logical addressing?",
+        "options": [
+          "Data Link",
+          "Network",
+          "Transport",
+          "Application"
+        ],
+        "answer": "Network",
+        "type": "single",
+        "explanation": "The Network layer (Layer 3) is responsible for logical addressing, such as assigning and managing IP addresses."
+      },
+      {
+        "question": "What type of address is used by switches to forward traffic?",
+        "options": [
+          "IP Address",
+          "MAC Address",
+          "Port Address",
+          "Broadcast Address"
+        ],
+        "answer": "MAC Address",
+        "type": "single",
+        "explanation": "Switches use MAC addresses (Layer 2) to forward traffic to the correct port within the same network."
+      },
+      {
+        "question": "What is the purpose of a subnet mask in IP addressing?",
+        "options": [
+          "Divide an IP address into network and host portions",
+          "Encrypt IP packets for security",
+          "Extend the range of IP addresses",
+          "Identify the default gateway"
+        ],
+        "answer": "Divide an IP address into network and host portions",
+        "type": "single",
+        "explanation": "A subnet mask separates the network portion of an IP address from the host portion, defining which part identifies the network."
+      }
+]

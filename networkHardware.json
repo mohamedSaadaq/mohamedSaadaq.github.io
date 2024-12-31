@@ -1,0 +1,177 @@
+[
+    {
+      "question": "Which of the following is a limitation of early networks that used a daisy-chain method of connecting computers? (Choose two.)",
+      "options": ["a. Total number of computers that could be connected", "b. The processing speed of the computers connected", "c. Cable length", "d. No Internet access"],
+      "answer": ["a. Total number of computers that could be connected", "c. Cable length"],
+      "type": "multiple",
+      "explanation": "Daisy-chain networks are like a single line of computers, connected one after another with a cable. This meant you could only connect a limited number of computers before the signal got weak (cable length issue) and slowed the network down (total computers limit). The computer speed depended on their own hardware, not the connection type, and early networks weren't necessarily designed with the internet in mind, so Internet access was a separate consideration."
+    },
+    {
+      "question": "Which of the following is true of a repeater?",
+      "options": ["a. Receives frames and forwards them", "b. Determines to which network to send a packet", "c. Receives bit signals and strengthens them", "d. Has a burned-in MAC address for each port"],
+      "answer": "c. Receives bit signals and strengthens them",
+      "type": "single",
+      "explanation": "A repeater's job is to boost weak electrical signals coming through the network cables, so data can travel further without losing quality. It doesn't choose where frames go (like a switch does) or manage network routes (like a router does), and it doesn't have a MAC address like more complex devices."
+    },
+    {
+      "question": "Which of the following is true of a hub? (Choose two.)",
+      "options": ["a. Usually has just two ports", "b. Transmits regenerated signals to all connected ports", "c. Usually has four or more ports", "d. Works with MAC addresses"],
+      "answer": ["b. Transmits regenerated signals to all connected ports", "c. Usually has four or more ports"],
+      "type": "multiple",
+      "explanation": "Hubs are like basic networking devices that take the data they receive and send it to all connected ports, regardless of where it needs to go. They usually have multiple ports to connect several devices. Hubs do not use MAC addresses to direct traffic; that's how more advanced devices like switches work."
+    },
+    {
+      "question": "Which of the following is the unit of measurement by which a network device's bandwidth is usually specified?",
+      "options": ["a. Bytes per second", "b. Bits per second", "c. Packets per second", "d. Bytes per minute"],
+      "answer": "b. Bits per second",
+      "type": "single",
+      "explanation": "Bits per second (bps) measures how much data can be moved through a network in one second, like counting how many droplets can pass through a pipe per second. Bytes are bigger than bits, and packets per second don’t measure total transfer speed. Bytes per minute is not commonly used."
+    },
+    {
+      "question": "Which of the following is a step in the operation of a switch? (Choose two.)",
+      "options": ["a. Reads source and destination IP addresses", "b. Reads source and destination MAC addresses", "c. Updates the switching table with destination IP address and port information", "d. Looks up the destination MAC address in its switching table"],
+      "answer": ["b. Reads source and destination MAC addresses", "d. Looks up the destination MAC address in its switching table"],
+      "type": "multiple",
+      "explanation": "Switches work with MAC addresses to direct data between devices on the same network by finding the right port from its memory (switching table). They don’t deal with IP addresses—routers do that—or sending traffic between networks."
+    },
+    {
+      "question": "What unit of information do switches work with?",
+      "options": ["a. Frames", "b. Bits", "c. Packets", "d. Bytes"],
+      "answer": "a. Frames",
+      "type": "single",
+      "explanation": "Switches deal with frames, which are packets of data used on local networks and contain MAC addresses. Bits are tiny pieces that make up the whole, packets relate to network layer information (handled by routers), and bytes are units within frames or packets."
+    },
+    {
+      "question": "Which of the following describes how devices connected to a switch use the bandwidth of the switch?",
+      "options": ["a. Dedicated bandwidth", "b. Half-duplex bandwidth", "c. Half-scale bandwidth", "d. Shared bandwidth"],
+      "answer": "a. Dedicated bandwidth",
+      "type": "single",
+      "explanation": "On a switch, each device gets its own separate channel to communicate at full speed, called dedicated bandwidth. Unlike hubs where bandwidth is shared and can slow down everyone, switches let devices use the full speed each way."
+    },
+    {
+      "question": "Which element of incoming data does a switch use to create its switching table?",
+      "options": ["a. Source IP address", "b. Destination logical address", "c. Destination physical address", "d. Source MAC address"],
+      "answer": "d. Source MAC address",
+      "type": "single",
+      "explanation": "Switches learn the location of devices by keeping track of the source MAC addresses that send data through it, making a directory of where devices are connected."
+    },
+    {
+      "question": "What purpose does the timestamp serve in a switching table?",
+      "options": ["a. Tells the switch when to forward a frame", "b. Tells the switch how long to wait for a response", "c. Tells the switch when to delete an entry", "d. Tells the switch how long it has been running"],
+      "answer": "c. Tells the switch when to delete an entry",
+      "type": "single",
+      "explanation": "Timestamps tell the switch how long it has been since each MAC address was last active. If an address isn’t seen for a while, it’s removed to keep the table tidy."
+    },
+    {
+      "question": "What feature of a switch allows devices to effectively communicate at 200 Mbps on a 100 Mbps switch?",
+      "options": ["a. Uplink port", "b. Full-duplex mode", "c. Shared bandwidth", "d. Bit strengthening", "e. Frame doubling"],
+      "answer": "b. Full-duplex mode",
+      "type": "single",
+      "explanation": "Full-duplex mode lets devices send and receive data at the same time. On a 100 Mbps switch, this means you can get 100 Mbps for sending and 100 Mbps for receiving simultaneously, adding up to 200 Mbps in total."
+    },
+    {
+      "question": "To which device is a wireless access point most similar in how it operates?",
+      "options": ["a. Hub", "b. Switch", "c. NIC", "d. Router"],
+      "answer": "a. Hub",
+      "type": "single",
+      "explanation": "A wireless access point is like a hub in that it sends data to all devices in the area, not just to the ones that need it. It doesn’t manage where data should go like a switch or router does."
+    },
+    {
+      "question": "What's the purpose of an RTS signal in wireless networking?",
+      "options": ["a. It allows the AP to request which device is the transmitting station.", "b. It allows the AP to tell all stations that it's ready to transmit data.", "c. It allows a client to notify the AP that it's ready to send data.", "d. It allows a client to request data from the AP."],
+      "answer": "c. It allows a client to notify the AP that it's ready to send data.",
+      "type": "single",
+      "explanation": "RTS stands for Request to Send. It’s used by a device to ask the wireless access point for permission to send data, avoiding collisions."
+    },
+    {
+      "question": "Which of the following is a common operating speed of a wireless access point?",
+      "options": ["a. 10 Kbps", "b. 110 Gbps", "c. 600 Kbps", "d. 54 Mbps"],
+      "answer": "d. 54 Mbps",
+      "type": "single",
+      "explanation": "54 Mbps was a typical speed for older Wi-Fi standards like 802.11g. It was fast enough for basic internet browsing and file transfers."
+    },
+    {
+      "question": "Which of the following is a task performed by a NIC and its driver? (Choose three.)",
+      "options": ["a. Provides a connection to the network medium", "b. Converts bit signals into frames for transmission on the medium", "c. Receives packets from the network protocol and creates frames", "d. Adds a header before sending a frame to the network protocol", "e. Adds error-checking data to the frame"],
+      "answer": ["a. Provides a connection to the network medium", "b. Converts bit signals into frames for transmission on the medium", "e. Adds error-checking data to the frame"],
+      "type": "multiple",
+      "explanation": "The NIC (Network Interface Card) connects your computer to the network. It takes care of changing raw data into frames for sending, and checks the data for errors. Creating packets from data is handled before it reaches the NIC."
+    },
+    {
+      "question": "Which of the following best describes a MAC address?",
+      "options": ["a. A 24-bit number expressed as 12 decimal digits", "b. Two 24-bit numbers, in which one is the OUI", "c. A 48-bit number composed of 12 octal digits", "d. A dotted decimal number burned into the NIC"],
+      "answer": "b. Two 24-bit numbers, in which one is the OUI",
+      "type": "single",
+      "explanation": "A MAC address is a 48-bit identifier for network devices, normally shown as a series of 12 hexadecimal digits. It includes the OUI, identifying the manufacturer, and a unique number for the device."
+    },
+    {
+      "question": "Under which circumstances does a NIC allow inbound communications to pass through the interface? (Choose two.)",
+      "options": ["a. The source MAC address is the broadcast address.", "b. The destination MAC address matches the built-in MAC address.", "c. The destination MAC address is all binary 1s.", "d. The NIC is operating in exclusive mode."],
+      "answer": ["b. The destination MAC address matches the built-in MAC address.", "c. The destination MAC address is all binary 1s."],
+      "type": "multiple",
+      "explanation": "A NIC accepts data meant for its specific MAC address (b) or when the address is set to all 1s (broadcast) meaning it should go to every device in the network (c). Source addresses don’t determine reception and 'exclusive mode' isn’t a standard NIC feature."
+    },
+    {
+      "question": "How does a protocol analyzer capture all frames?",
+      "options": ["a. It configures the NIC to capture only unicast frames.", "b. It sets all incoming destination addresses to be broadcasts.", "c. It configures the NIC to operate in promiscuous mode.", "d. It sets the exclusive mode option on the NIC.", "e. It captures only multicast frames."],
+      "answer": "c. It configures the NIC to operate in promiscuous mode.",
+      "type": "single",
+      "explanation": "Promiscuous mode lets a NIC listen to all network traffic, regardless of the destination, making it handy for network analysis."
+    },
+    {
+      "question": "Where do you usually find a MAC address?",
+      "options": ["a. In nonvolatile memory on the NIC", "b. In a switch's configuration file", "c. In the routing table", "d. In the header of a packet"],
+      "answer": "a. In nonvolatile memory on the NIC",
+      "type": "single",
+      "explanation": "The MAC address is stored in the nonvolatile memory of the NIC, making it a permanent identifier that doesn’t change when the device is turned off."
+    },
+    {
+      "question": "Which of the following is the purpose of an SSID?",
+      "options": ["a. Assigns an address to a wireless NIC", "b. Acts as a unique name for a local area connection", "c. Acts as a security key for securing a network", "d. Identifies a wireless network"],
+      "answer": "d. Identifies a wireless network",
+      "type": "single",
+      "explanation": "SSID is the name you see when searching for Wi-Fi networks, helping you pick the right one to connect to."
+    },
+    {
+      "question": "Which of the following describe the function of routers? (Choose two.)",
+      "options": ["a. Forward frames from one network to another.", "b. Connect LANs.", "c. Attach computers to the internetwork.", "d. Work with packets and IP addresses."],
+      "answer": ["b. Connect LANs.", "d. Work with packets and IP addresses."],
+      "type": "multiple",
+      "explanation": "Routers join different networks (LANs) together and direct packets based on IP addresses. Unlike switches, routers handle traffic between networks, not individual computer connections (switches and NICs do that), and they forward packets, not frames."
+    },
+    {
+      "question": "What information is found in a routing table?",
+      "options": ["a. Computer names and IP addresses", "b. Network addresses and interfaces", "c. MAC addresses and ports", "d. IP addresses and MAC addresses"],
+      "answer": "b. Network addresses and interfaces",
+      "type": "single",
+      "explanation": "Routing tables have a list of network addresses and the associated interfaces to use for sending data to other networks, guiding the path packets take."
+    },
+    {
+      "question": "You currently have 15 switches with an average of 20 stations connected to each switch. The switches are connected to one another so that all 300 computers can communicate with one another in a single LAN. You have been detecting a high percentage of broadcast frames on this LAN. You think the number of broadcasts might be having an impact on network performance. What should you do?",
+      "options": ["a. Connect the switches in groups of five and connect each group of switches to a central hub.", "b. Configure the switches to operate in half-duplex mode.", "c. Reorganize the network into smaller groups and connect each group to a router.", "d. Disable broadcast forwarding on the switches."],
+      "answer": "c. Reorganize the network into smaller groups and connect each group to a router.",
+      "type": "single",
+      "explanation": "Dividing the network into smaller segments connected by routers reduces the amount of broadcast traffic in each part of the network, improving overall performance. Hubs would worsen broadcast issues because they spread all traffic, half-duplex reduces overall efficiency, and disabling broadcasts entirely would impact necessary functions like network discovery."
+    },
+    {
+      "question": "Which of the following is true about a router versus a switch?",
+      "options": ["a. Routers connect LANs, switches connect computers.", "b. Routers work with physical (MAC) addresses, switches work with logical (IP) addresses.", "c. Routers work with frames, switches work with packets.", "d. Routers forward broadcast packets, switches do not."],
+      "answer": "a. Routers connect LANs, switches connect computers.",
+      "type": "single",
+      "explanation": "Routers link different LANs together and deal with IPs. Switches connect devices within the same LAN by handling frames, not packets, and are used for local device communication."
+    },
+    {
+      "question": "If a router receives a packet with a destination network address unknown to the router, what does the router do?",
+      "options": ["a. Sends the packet out all interfaces", "b. Discards the packet", "c. Adds the destination network to its routing table", "d. Queries the network for the destination network"],
+      "answer": "b. Discards the packet",
+      "type": "single",
+      "explanation": "If a router doesn’t recognize the destination network and has no 'default route' configured, it drops the packet instead of risking sending it to the wrong place. It doesn’t sent it to every network since that could create a traffic jam, nor does it automatically add unknown networks without a routing protocol instruction."
+    },
+    {
+      "question": "Which of the following is true about a router? (Choose two.)",
+      "options": ["a. Forwards broadcasts", "b. Uses default routes for unknown network addresses", "c. Forwards unicasts", "d. Is used primarily to connect workstations"],
+      "answer": ["b. Uses default routes for unknown network addresses", "c. Forwards unicasts"],
+      "type": "multiple",
+      "explanation": "Routers use default routes to handle traffic for unknown destinations, making them handy for directing data in large networks. They also forward unicast traffic (one-to-one) but don’t forward broadcast traffic across different networks. Connecting workstations is typically managed by switches and NICs, not routers."
+    }
+  ]
