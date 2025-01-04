@@ -1,0 +1,170 @@
+[
+    {
+      "question": "Which of the following describes the arrangement of network cabling between devices?",
+      "options": ["a. Logical topology", "b. Networking technology", "c. Physical topology", "d. Media access method"],
+      "answer": "c. Physical topology",
+      "type": "single",
+      "explanation": "Physical topology is about how network cables and devices are actually placed. Think of it like a map showing how wires are laid out, such as in a star shape where everything connects to a central point."
+    },
+    {
+      "question": "Which of the following is an advantage of a star topology? (Choose all that apply.)",
+      "options": ["a. Allows faster technologies than a bus does", "b. Requires less cabling than a bus", "c. Centralized monitoring of network traffic", "d. No single point of failure"],
+      "answer": ["a. Allows faster technologies than a bus does", "c. Centralized monitoring of network traffic"],
+      "type": "multiple",
+      "explanation": "Star topology lets us use faster technology like modern Ethernet, and since all connections are through a central hub or switch, it’s easier to monitor the entire network. However, it actually uses more cables and relies on the central hub—if that fails, the network stops."
+    },
+    {
+      "question": "Which topology is likely to be deployed in a WAN where there's a central office and three branch offices, and you want all traffic from the branch offices to go through the central office network?",
+      "options": ["a. Ring", "b. PMP", "c. Mesh", "d. Point-to-point"],
+      "answer": "b. PMP",
+      "type": "single",
+      "explanation": "Point-to-Multipoint (PMP) topology suits this scenario. Imagine a main office acting like a spider at the center of its web, where all branch offices connect directly to it to route their traffic."
+    },
+    {
+      "question": "Which technology is likely to be implemented as a point-to-point physical topology?",
+      "options": ["a. Wi-Fi infrastructure mode", "b. FDDI", "c. Ethernet", "d. Wireless bridge"],
+      "answer": "d. Wireless bridge",
+      "type": "single",
+      "explanation": "A wireless bridge links two networks directly over Wi-Fi, just like a rope bridge between two islands. This makes a direct link without needing a central hub."
+    },
+    {
+      "question": "Which of the following describes a hub-based Ethernet network?",
+      "options": ["a. Physical bus", "b. Logical bus", "c. Physical star", "d. Logical star"],
+      "answer": "b. Logical bus",
+      "type": "single",
+      "explanation": "Hub-based networks connect devices in a star shape (physically) but treat them as one long line (logically) where everyone hears all messages, like a bus with a single open area for communication."
+    },
+    {
+      "question": "You’re configuring a WLAN in a long, narrow ballroom. The only place you can mount the access point is at one end of the room. Which antenna type should you use?",
+      "options": ["a. Unidirectional", "b. Bidirectional", "c. Omnidirectional", "d. Semidirectional"],
+      "answer": "a. Unidirectional",
+      "type": "single",
+      "explanation": "A unidirectional antenna sends the Wi-Fi signal straight down the room like a flashlight beam, making it perfect for a long, narrow space like the ballroom you described."
+    },
+    {
+      "question": "Which of the following best describes a typical wireless LAN?",
+      "options": ["a. Logical ring topology", "b. Logical switching topology", "c. Logical bus topology", "d. Logical star topology"],
+      "answer": "d. Logical star topology",
+      "type": "single",
+      "explanation": "In a wireless LAN, all devices connect to a central access point (AP) wirelessly, forming a star shape logically since they all talk to and through the AP."
+    },
+    {
+      "question": "Which of the following is a characteristic of a switched logical topology? (Choose all that apply.)",
+      "options": ["a. Uses a physical bus topology", "b. Creates dynamic connections", "c. Sometimes called a shared-media topology", "d. Uses a physical star topology"],
+      "answer": ["b. Creates dynamic connections", "d. Uses a physical star topology"],
+      "type": "multiple",
+      "explanation": "Switched networks set up specific paths for data between devices, making dynamic connections as needed, and they use a star shape physically, connecting all devices to a switch."
+    },
+    {
+      "question": "Which of the following is a characteristic of unshielded twisted-pair (UTP) cabling? (Choose all that apply.)",
+      "options": ["a. Consists of four wires", "b. Commonly used in physical bus topologies", "c. Has a distance limitation of 100 meters", "d. Susceptible to electrical interference"],
+      "answer": ["c. Has a distance limitation of 100 meters", "d. Susceptible to electrical interference"],
+      "type": "multiple",
+      "explanation": "UTP cables can go up to 100 meters before needing a boost for further distances, and they can pick up electrical noise like from power cables since they aren't shielded."
+    },
+    {
+      "question": "Which of the following is a characteristic of fiber-optic cabling? (Choose all that apply.)",
+      "options": ["a. Can be used in electrically noisy environments", "b. Requires only a single strand of fiber for network connections", "c. Carries data over longer distances than UTP does", "d. Lower bandwidth capability"],
+      "answer": ["a. Can be used in electrically noisy environments", "c. Carries data over longer distances than UTP does"],
+      "type": "multiple",
+      "explanation": "Fiber-optic cables use light instead of electricity to send data, making them great for noisy areas and allowing data to travel longer distances without weakening."
+    },
+    {
+      "question": "Which topology most likely uses coaxial cabling?",
+      "options": ["a. Physical star", "b. Logical ring", "c. Physical bus", "d. Logical switching"],
+      "answer": "c. Physical bus",
+      "type": "single",
+      "explanation": "Coaxial cables were often used in old physical bus topologies where all devices were connected in a single line, like lights on a Christmas tree."
+    },
+    {
+      "question": "Which of the following is true of a MAC address?",
+      "options": ["a. All binary is in the source address indicate a broadcast frame.", "b. It's sometimes called a logical address.", "c. A destination address of 12 hexadecimal Fs is a broadcast.", "d. It's composed of 12 bits."],
+      "answer": "c. A destination address of 12 hexadecimal Fs is a broadcast.",
+      "type": "single",
+      "explanation": "A MAC address made of 12 Fs (FF:FF:FF:FF:FF:FF) is for sending data to all devices on a network, like calling everyone to a meeting."
+    },
+    {
+      "question": "Which type of Wi-Fi signal interference is most likely to be caused by leaves on trees?",
+      "options": ["a. Diffraction", "b. Reflection", "c. Refraction", "d. Scattering"],
+      "answer": "d. Scattering",
+      "type": "single",
+      "explanation": "Scattering happens when Wi-Fi signals hit small objects like leaves, causing the signal to split up and go different directions, weakening it."
+    },
+    {
+      "question": "Which of the following is a field of the most common Ethernet frame type? (Choose all that apply.)",
+      "options": ["a. ARP trailer", "b. FCS", "c. Destination MAC Address", "d. Data", "e. MAC type"],
+      "answer": ["b. FCS", "c. Destination MAC Address", "d. Data"],
+      "type": "multiple",
+      "explanation": "Ethernet frames have a Destination MAC Address to show where they are going, Data for the info being sent, and an FCS to check for errors during travel."
+    },
+    {
+      "question": "Which access method uses a 'listen before sending' strategy?",
+      "options": ["a. Token passing", "b. CSMA/CD", "c. Token bus", "d. Polling"],
+      "answer": "b. CSMA/CD",
+      "type": "single",
+      "explanation": "CSMA/CD is like knocking before entering a room. Devices listen to make sure no one else is using the line before they send their data, reducing collisions."
+    },
+    {
+      "question": "Which of the following is true about full-duplex Ethernet? (Choose all that apply.)",
+      "options": ["a. Stations can transmit and receive, but not at the same time.", "b. Collision detection is turned off.", "c. It's possible only with switches.", "d. It allows a physical bus to operate much faster."],
+      "answer": ["b. Collision detection is turned off", "c. It's possible only with switches"],
+      "type": "multiple",
+      "explanation": "Full-duplex means data can flow both ways at once like a two-way street, so there's no risk of collisions, and it works only with switches that handle these direct connections."
+    },
+    {
+      "question": "Which of the following is defined by the extent to which signals in an Ethernet bus topology network are propagated?",
+      "options": ["a. Physical domain", "b. Collision domain", "c. Broadcast domain", "d. Logical domain"],
+      "answer": "b. Collision domain",
+      "type": "single",
+      "explanation": "A collision domain is an area where only one device can talk at a time without clashing, like speaking in turns in a small meeting room."
+    },
+    {
+      "question": "Which of the following is considered a property of Ethernet? (Choose all that apply.)",
+      "options": ["a. Scalable", "b. Best-effort delivery system", "c. Guaranteed delivery system", "d. Obsolete technology"],
+      "answer": ["a. Scalable", "b. Best-effort delivery system"],
+      "type": "multiple",
+      "explanation": "Ethernet can grow from small to large networks, making it scalable, and it sends data hoping it arrives (best-effort) but doesn’t check if it has arrived successfully."
+    },
+    {
+      "question": "Which of the following is true of IEEE 802.3an?",
+      "options": ["a. Requires two pairs of wires", "b. Uses Category 5 or higher cabling", "c. Currently best for desktop computers", "d. Operates only in full-duplex mode"],
+      "answer": "d. Operates only in full-duplex mode",
+      "type": "single",
+      "explanation": "IEEE 802.3an (10GBASE-T) allows data to flow in both directions at once (full-duplex) and needs all wires in a cable to achieve 10 Gbps speeds."
+    },
+    {
+      "question": "Which Ethernet standard can deliver up to 5 Gbps of bandwidth over Cat 5e and Cat 6 cabling?",
+      "options": ["a. IEEE 802.3an", "b. 802.3ab", "c. 802.3bz", "d. 802.3u"],
+      "answer": "c. 802.3bz",
+      "type": "single",
+      "explanation": "802.3bz lets you have faster data transfer, up to 5 Gbps, without needing to upgrade old cables, helping bridge existing setups to newer speeds."
+    },
+    {
+      "question": "Which Wi-Fi standard can provide the highest bandwidth?",
+      "options": ["a. 802.11ac", "b. 802.11n", "c. 802.11a", "d. 802.11g"],
+      "answer": "a. 802.11ac",
+      "type": "single",
+      "explanation": "802.11ac offers the fastest speeds available for Wi-Fi, perfect for activities needing high data transfer, like streaming high-definition videos."
+    },
+    {
+      "question": "How many channels can be used on an 802.11b network in North America?",
+      "options": ["a. 7", "b. 9", "c. 11", "d. 13"],
+      "answer": "c. 11",
+      "type": "single",
+      "explanation": "802.11b uses the 2.4 GHz band in North America with 11 channels, though only 3 of them (1, 6, and 11) are usually used to avoid overlap and interference."
+    },
+    {
+      "question": "Which media access method does Wi-Fi use?",
+      "options": ["a. CSMA/CD", "b. Token bus", "c. Demand priority", "d. CSMA/CA"],
+      "answer": "d. CSMA/CA",
+      "type": "single",
+      "explanation": "Wi-Fi networks use CSMA/CA to avoid collisions. Devices listen for a clear signal and then send data, helping minimize crashes in signal sending."
+    },
+    {
+      "question": "Which Wi-Fi standard uses beamforming to allow an AP to send data to multiple devices simultaneously?",
+      "options": ["a. 802.11ac", "b. 802.11n", "c. 802.11a", "d. 802.11g"],
+      "answer": "a. 802.11ac",
+      "type": "single",
+      "explanation": "802.11ac uses beamforming to direct Wi-Fi signals where they are needed, allowing multiple users to get data at the same time, enhancing performance."
+    }
+  ]

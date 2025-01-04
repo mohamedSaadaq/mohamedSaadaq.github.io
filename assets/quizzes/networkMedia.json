@@ -1,0 +1,177 @@
+[
+    {
+      "question": "Which of the following is a common characteristic of a networking medium? (Choose all that apply.)",
+      "options": ["a. Bandwidth rating", "b. Interference susceptibility", "c. Broadband rating", "d. Maximum segment length"],
+      "answer": ["a. Bandwidth rating", "d. Maximum segment length"],
+      "type": "multiple",
+      "explanation": "Bandwidth rating means how fast data can move through the network cable. Maximum segment length tells us how long the cable can be before the signal gets weak. Interference susceptibility means how likely the cable is to be affected by outside electrical noise. Broadband rating is about the type of internet, not the cable itself."
+    },
+    {
+      "question": "Which of the following types of fiber-optic connectors provides high density and requires only one connector for two cables?",
+      "options": ["a. SC", "b. ST", "c. MT-RJ", "d. RJ-45"],
+      "answer": "c. MT-RJ",
+      "type": "single",
+      "explanation": "The MT-RJ connector is small and can connect two fiber cables (one for sending and one for receiving) into one tiny connector. SC and ST are older types, and RJ-45 is for regular network cables, not fiber."
+    },
+    {
+      "question": "Which of the following conditions requires cables not to exceed a recommended maximum length?",
+      "options": ["a. Diminution", "b. Capacitance", "c. Bandwidth", "d. Attenuation"],
+      "answer": "d. Attenuation",
+      "type": "single",
+      "explanation": "Attenuation means the signal gets weaker if the cable is too long. That’s why there’s a limit on how long a cable can be. Diminution isn't used in networking, capacitance is about storing electrical charge, and bandwidth is about how much data can go through."
+    },
+    {
+      "question": "Which of the following is the process for representing bit signals on the medium?",
+      "options": ["a. Encryption", "b. Encoding", "c. Decryption", "d. Decoding"],
+      "answer": "b. Encoding",
+      "type": "single",
+      "explanation": "Encoding is how we turn data into signals that can travel over cables. Think of it like translating letters into signals. Encryption is about scrambling data to keep it safe. Decryption and decoding are about turning data back to its original form."
+    },
+    {
+      "question": "What happens to signals as they travel the length of the medium?",
+      "options": ["a. They decode.", "b. They amplify.", "c. They attenuate.", "d. They implode."],
+      "answer": "c. They attenuate",
+      "type": "single",
+      "explanation": "Attenuate means signals get weaker as they travel through the cable. We use special devices to boost signals if they need to go far. Amplifying means making signals stronger, but that needs special equipment. Decode happens at the end when signals turn back into data."
+    },
+    {
+      "question": "Which of the following is UTP susceptible to? (Choose all that apply.)",
+      "options": ["a. EMI", "b. Crosstalk", "c. Signal enhancement", "d. LEDs"],
+      "answer": ["a. EMI", "b. Crosstalk"],
+      "type": "multiple",
+      "explanation": "EMI means interference from things like other electronic devices. Crosstalk happens when signals from one wire mix with signals from another. UTP doesn’t handle these well because it doesn’t have shielding. Signal enhancement isn’t about interference, and LEDs don’t cause interference."
+    },
+    {
+      "question": "The space between a false ceiling and the true ceiling where heating and cooling air circulates is called the:",
+      "options": ["a. Duct-equivalent airspace", "b. Conduit", "c. Return air", "d. Plenum"],
+      "answer": "d. Plenum",
+      "type": "single",
+      "explanation": "A plenum is a space in buildings used for air circulation for heating and cooling. Special cables used here have to be safe in case of a fire. Duct-equivalent airspace isn’t a term we use, conduit is for protecting cables, and return air is about air going back to the AC."
+    },
+    {
+      "question": "What type of connector is used most commonly with TP (twisted-pair) network wiring?",
+      "options": ["a. RJ-11", "b. RJ-45", "c. BNC", "d. MT-RJ"],
+      "answer": "b. RJ-45",
+      "type": "single",
+      "explanation": "RJ-45 is the connector used for most network cables like the ones in your home. RJ-11 is for phones, BNC is for older video or network cables, and MT-RJ is for fiber optics."
+    },
+    {
+      "question": "You have been hired to install a network at a large government agency that wants to reduce the likelihood of electronic eavesdropping on its network. What type of cable is most resistant to eavesdropping?",
+      "options": ["a. UTP", "b. STP", "c. Coaxial", "d. Fiber optic"],
+      "answer": "d. Fiber optic",
+      "type": "single",
+      "explanation": "Fiber optic is the safest because it carries data as light, which is really hard to tap into without being caught. UTP and STP can still be listened to since they use electrical signals. Coaxial is a bit better but not as safe as fiber."
+    },
+    {
+      "question": "Which of the following is a characteristic of unshielded twisted-pair (UTP) cable? (Choose all that apply.)",
+      "options": ["a. Consists of four wires", "b. Commonly used in physical bus topologies", "c. Has a distance limitation of 100 meters", "d. Is susceptible to electrical interference"],
+      "answer": ["c. Has a distance limitation of 100 meters", "d. Is susceptible to electrical interference"],
+      "type": "multiple",
+      "explanation": "UTP cables can only go up to 100 meters before they lose signal quality. They also don’t have shielding, so they get interference easily. They actually have 8 wires (4 twisted pairs), and they’re usually used in star layouts, not bus."
+    },
+    {
+      "question": "Which of the following is a characteristic of fiber-optic cabling? (Choose all that apply.)",
+      "options": ["a. Can be used in electrically noisy environments", "b. Requires only a single strand of fiber for network connections", "c. Carries data over longer distances than UTP", "d. Has low bandwidth"],
+      "answer": ["a. Can be used in electrically noisy environments", "c. Carries data over longer distances than UTP"],
+      "type": "multiple",
+      "explanation": "Fiber-optic cables work in places with lots of electrical interference because they use light to send data. They can also send data really far compared to UTP. Usually, you need two fibers: one to send and one to receive. Fiber-optic cables actually have lots of data capacity, not low."
+    },
+    {
+      "question": "You're preparing to install a conventional Ethernet network in your office building, but your boss tells you to be ready to handle a switchover to 1 Gbps Ethernet next year. What types of cable could you install? (Choose all that apply.)",
+      "options": ["a. Cat 5", "b. Fiber optic", "c. Cat 4", "d. Cat 6"],
+      "answer": ["b. Fiber optic", "d. Cat 6"],
+      "type": "multiple",
+      "explanation": "Fiber optic is very fast and future-proof. Cat 6 cables are made for gigabit speeds and can handle even more. Cat 5 is older and not officially made for gigabit, while Cat 4 is even older and slower."
+    },
+    {
+      "question": "When two cables run side by side, signals traveling down one wire might interfere with signals traveling on the other wire. What is this phenomenon called?",
+      "options": ["a. RFI", "b. Attenuation", "c. Impedance", "d. Crosstalk"],
+      "answer": "d. Crosstalk",
+      "type": "single",
+      "explanation": "Crosstalk happens when wires are too close together and their signals mix up. It's like hearing chatter on a phone line. RFI means radio interference from outside, not from next-door wires. Attenuation is about signal weakening, and impedance is just the resistance in the wires."
+    },
+    {
+      "question": "What characteristic of twisted-pair cabling helps mitigate the effects of crosstalk?",
+      "options": ["a. Differential signals", "b. Copper conductors", "c. Four pairs of wires", "d. 100-ohm impedance"],
+      "answer": "a. Differential signals",
+      "type": "single",
+      "explanation": "Differential signals cancel out noise because the wires carry signals in opposite ways, fixing interference like crosstalk. The copper in the wires doesn’t help with crosstalk, and four pairs isn’t the key—it’s the twisting of the wires."
+    },
+    {
+      "question": "Which cabling category is specified for 25GBASE-T and 40GBASE-T networks?",
+      "options": ["a. Cat 6a", "b. Cat 7", "c. Cat 7a", "d. Cat 8"],
+      "answer": "d. Cat 8",
+      "type": "single",
+      "explanation": "Cat 8 cables are made for super-fast networks like 25G or 40G connections and are used where speed really matters, like data centers. Cat 6a and Cat 7 can’t handle speeds that high."
+    },
+    {
+      "question": "Which of the following is a wiring standard for twisted-pair cable connections? (Choose all that apply.)",
+      "options": ["a. IEEE 802.3a", "b. TIA/EIA 568A", "c. IEEE 802.3b", "d. TIA/EIA 568B"],
+      "answer": ["b. TIA/EIA 568A", "d. TIA/EIA 568B"],
+      "type": "multiple",
+      "explanation": "These standards tell us how the wires should be arranged inside the cable ends for proper connection: 568A is used in some networks, and 568B is the most common one. IEEE standards listed aren’t about the wiring order for network cables."
+    },
+    {
+      "question": "Which of the following is a component of a structured cabling system? (Choose all that apply.)",
+      "options": ["a. Patch cables", "b. RJ-11 plugs", "c. Coax cable", "d. Horizontal wiring"],
+      "answer": ["a. Patch cables", "d. Horizontal wiring"],
+      "type": "multiple",
+      "explanation": "Patch cables are short and connect devices to the network. Horizontal wiring goes through the building connecting everything together. RJ-11 plugs are for phones, and coax cable is outdated for today's network setups."
+    },
+    {
+      "question": "Where are you most likely to find backbone cabling? (Choose all that apply.)",
+      "options": ["a. MDF", "b. In the work area", "c. Between IDFs", "d. Connecting a work area to an IDF"],
+      "answer": ["a. MDF", "c. Between IDFs"],
+      "type": "multiple",
+      "explanation": "Backbone cabling runs between key network centers like the MDF (main central point) and IDFs (smaller points on different floors). It doesn't go to individual desks or workplaces."
+    },
+    {
+      "question": "Which of the following is a tool needed to make a patch cable? (Choose all that apply.)",
+      "options": ["a. 110 punchdown tool", "b. Cable stripper", "c. Crimping tool", "d. RJ-45 jack"],
+      "answer": ["b. Cable stripper", "c. Crimping tool"],
+      "type": "multiple",
+      "explanation": "Cable strippers remove the outer jacket of the cable, and crimping tools attach the connector to the cable. A 110 punchdown tool is for connecting cables inside panels, not connectors. RJ-45 jack is not a tool, but the part you put on the cable."
+    },
+    {
+      "question": "Which type of connection is most likely to require a crossover cable?",
+      "options": ["a. PC to hub", "b. Hub to router", "c. Router to switch", "d. PC to router"],
+      "answer": "c. Router to switch",
+      "type": "single",
+      "explanation": "Crossover cables are for connecting similar devices, like connecting routers to switches. Modern devices often automatically adjust, but traditionally, you needed crossover cables for certain connections."
+    },
+    {
+      "question": "Which UTP limitations can be solved by fiber-optic cable? (Choose all that apply.)",
+      "options": ["a. Bandwidth", "b. EMI susceptibility", "c. Installation cost", "d. Segment length"],
+      "answer": ["b. EMI susceptibility", "d. Segment length"],
+      "type": "multiple",
+      "explanation": "Fiber-optic isn’t affected by electrical interference (EMI), and it can run much longer distances than UTP. Fiber-optic offers higher data capacity, but it costs more, so it doesn’t solve the cost issue."
+    },
+    {
+      "question": "How many strands of fiber-optic cable are typically used for a network connection?",
+      "options": ["a. 1", "b. 2", "c. 4", "d. 8"],
+      "answer": "b. 2",
+      "type": "single",
+      "explanation": "You usually use 2 fibers: one for sending and one for receiving data so that information can flow both ways at once. Some special setups use more than 2, but that’s not common for regular connections."
+    },
+    {
+      "question": "Which statement is true about fiber-optic cables?",
+      "options": ["a. MMF uses lasers and has a thicker core.", "b. SMF uses lasers and has a thinner core.", "c. MMF uses LEDs and has a thinner core.", "d. SMF uses LEDs and has a thicker core."],
+      "answer": "b. SMF uses lasers and has a thinner core.",
+      "type": "single",
+      "explanation": "Single-Mode Fiber (SMF) uses lasers for long-distance, fast data travel through its thin core. Multi-Mode Fiber (MMF) uses LEDs and has a thicker core, making it good for shorter distances."
+    },
+    {
+      "question": "When might you want to use a rollover cable?",
+      "options": ["a. To connect a PC to another PC", "b. To connect a router to a switch", "c. To add a switch to a LAN", "d. To configure a Cisco device"],
+      "answer": "d. To configure a Cisco device",
+      "type": "single",
+      "explanation": "Rollover cables let you connect a computer to a Cisco device's console port for configuration. To connect PCs or network devices, other cables are used, not rollover cables."
+    },
+    {
+      "question": "Which of the following wireless technologies does the original 802.11b wireless standard use?",
+      "options": ["a. Infrared", "b. Narrowband radio", "c. Frequency hopping", "d. Direct-sequence spread spectrum"],
+      "answer": "d. Direct-sequence spread spectrum",
+      "type": "single",
+      "explanation": "Direct-sequence spread spectrum (DSSS) spreads the wireless signal across a wider band, making it more stable and less likely to face interference. Infrared and narrowband radio aren't used in 802.11b, and frequency hopping is used in other standards."
+    }
+  ]

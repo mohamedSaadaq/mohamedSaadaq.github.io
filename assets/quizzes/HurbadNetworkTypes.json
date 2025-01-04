@@ -1,0 +1,177 @@
+[
+    {
+      "question": "What defines a Local Area Network (LAN)?",
+      "options": ["a. A network spanning cities", "b. A network in a single location", "c. A network using public Wi-Fi", "d. A network connecting different countries"],
+      "answer": "b. A network in a single location",
+      "type": "single",
+      "explanation": "A LAN is limited to a single physical area like a building or campus. It is managed by one organization and doesn't span cities or countries or involve public Wi-Fi."
+    },
+    {
+      "question": "What is the primary standard used for wired LANs?",
+      "options": ["a. IEEE 802.3", "b. IEEE 802.11", "c. LTE", "d. NFC"],
+      "answer": "a. IEEE 802.3",
+      "type": "single",
+      "explanation": "IEEE 802.3 is the Ethernet standard for wired connections, used widely in LAN setups. IEEE 802.11 is for wireless, LTE is a mobile network standard, and NFC is for short-range communication."
+    },
+    {
+      "question": "What speed does 1000BASE-T Ethernet support?",
+      "options": ["a. 100 Mbps", "b. 10 Mbps", "c. 1 Gbps", "d. 10 Gbps"],
+      "answer": "c. 1 Gbps",
+      "type": "single",
+      "explanation": "1000BASE-T supports 1 Gbps using twisted-pair cables. 100 Mbps is for 100BASE-T, 10 Mbps for older Ethernet, and 10 Gbps for 10GBASE-T."
+    },
+    {
+      "question": "What is a key feature of Wireless LANs (WLANs)?",
+      "options": ["a. Use of fiber optics", "b. Data transmission via radio waves", "c. Networking over phone lines", "d. Reliance on satellite signals"],
+      "answer": "b. Data transmission via radio waves",
+      "type": "single",
+      "explanation": "WLANs use radio waves, known as Wi-Fi, for data communication. They don’t typically use fiber optics or phone lines or depend on satellites."
+    },
+    {
+      "question": "What distinguishes a Wide Area Network (WAN) from a LAN?",
+      "options": ["a. Uses the same LAN technologies", "b. Covers multiple cities or countries", "c. Is simpler than a LAN", "d. Operates only within a building"],
+      "answer": "b. Covers multiple cities or countries",
+      "type": "single",
+      "explanation": "WANs connect networks over large distances, such as across cities or countries. LANs are simpler, operated within buildings, using local technologies."
+    },
+    {
+      "question": "What is a characteristic of a Metropolitan Area Network (MAN)?",
+      "options": ["a. Larger than a WAN", "b. Covers an entire city", "c. Uses Bluetooth technology", "d. Is limited to a home office"],
+      "answer": "b. Covers an entire city",
+      "type": "single",
+      "explanation": "A MAN is designed to cover areas as big as a city. It's smaller than a WAN, doesn’t use Bluetooth, and isn’t a home networking solution."
+    },
+    {
+      "question": "How does a small office/home office (SOHO) network typically operate?",
+      "options": ["a. Uses multiple devices for each function", "b. Utilizes a single router for LAN and internet", "c. Requires dedicated server rooms", "d. Employs satellite internet exclusively"],
+      "answer": "b. Utilizes a single router for LAN and internet",
+      "type": "single",
+      "explanation": "A SOHO network uses one device, often called a SOHO router, to manage LAN and internet tasks. It doesn’t need multiple dedicated devices, server rooms, or satellite."
+    },
+    {
+      "question": "What defines an Enterprise Network compared to a SOHO network?",
+      "options": ["a. Limited to residential use", "b. Integrates only wired devices", "c. Uses multiple specialized devices", "d. Has fewer connected devices"],
+      "answer": "c. Uses multiple specialized devices",
+      "type": "single",
+      "explanation": "Enterprise networks use many devices for different tasks to support large user bases. Unlike residential or wired-only networks, they have more complex setups than SOHO networks."
+    },
+    {
+      "question": "What is the purpose of a datacenter?",
+      "options": ["a. To provide public Wi-Fi", "b. To manage personal network gadgets", "c. To host server resources and applications", "d. To sell internet access to individuals"],
+      "answer": "c. To host server resources and applications",
+      "type": "single",
+      "explanation": "Datacenters focus on hosting servers for services and applications, not providing public Wi-Fi, managing personal gadgets, or selling individual internet access."
+    },
+    {
+      "question": "What is a Storage Area Network (SAN) used for?",
+      "options": ["a. General internet access", "b. Connecting storage to servers", "c. Home automation controls", "d. Linking mobile devices to PCs"],
+      "answer": "b. Connecting storage to servers",
+      "type": "single",
+      "explanation": "SANs connect large storage systems to server networks, not used for internet access, home automation, or mobile to PC connections."
+    },
+    {
+      "question": "What defines a Personal Area Network (PAN)?",
+      "options": ["a. Connects city-wide internet points", "b. Links personal devices over short distances", "c. Used for international communications", "d. Depends on tethered connections"],
+      "answer": "b. Links personal devices over short distances",
+      "type": "single",
+      "explanation": "PANs allow devices like phones and wearables to connect wirelessly over a short range, not for city-wide, international, or tethered network use."
+    },
+    {
+      "question": "How does Ethernet differ when using fiber optic cabling?",
+      "options": ["a. Transmits data via electrical signals", "b. Can only be used outdoors", "c. Uses light pulses for data communication", "d. Requires more signal boosters"],
+      "answer": "c. Uses light pulses for data communication",
+      "type": "single",
+      "explanation": "Fiber-optic Ethernet uses light, not electrical signals, to transmit data, which can be used indoors or outdoors without needing more boosters than copper cables."
+    },
+    {
+      "question": "Which network type would best suit connecting several branch offices across a city?",
+      "options": ["a. PAN", "b. MAN", "c. LAN", "d. SOHO"],
+      "answer": "b. MAN",
+      "type": "single",
+      "explanation": "A MAN is ideal for linking office networks within a city, while a PAN is for personal device connections, LANs are smaller in area, and SOHO devices are for small office setups."
+    },
+    {
+      "question": "What advantage does a Home Office Network typically have?",
+      "options": ["a. Greater speed than corporate networks", "b. Easier to manage due to fewer devices", "c. Requires constant professional maintenance", "d. Capable of handling enterprise-level workloads"],
+      "answer": "b. Easier to manage due to fewer devices",
+      "type": "single",
+      "explanation": "Home Office Networks are simpler due to fewer devices, unlike corporate networks needing constant professional management or handling large workloads. They aren’t inherently faster."
+    },
+    {
+      "question": "How does connecting devices in a LAN benefit an organization?",
+      "options": ["a. Limits data sharing only with the internet", "b. Increases the cost of networking", "c. Enhances security within a contained area", "d. Requires external management"],
+      "answer": "c. Enhances security within a contained area",
+      "type": "single",
+      "explanation": "LANs enhance security as they are confined to a small, manageable area, which doesn’t require external management or focus on internet-only data sharing, and can lower costs."
+    },
+    {
+      "question": "What technology is commonly used in modern WLANs for connecting devices?",
+      "options": ["a. Infrared", "b. Zigbee", "c. Bluetooth", "d. Wi-Fi"],
+      "answer": "d. Wi-Fi",
+      "type": "single",
+      "explanation": "Wi-Fi is the technology used for wireless LANs allowing devices to connect without cables. Infrared and Bluetooth are for short-range personal connections, and Zigbee is often used for IoT devices."
+    },
+    {
+      "question": "Which network type would be most suitable for a global corporation with offices around the world?",
+      "options": ["a. WAN", "b. LAN", "c. PAN", "d. MAN"],
+      "answer": "a. WAN",
+      "type": "single",
+      "explanation": "A WAN connects networks over large distances, suitable for global corporations. LANs cover local areas, PANs connect personal devices, and MANs are limited to cities."
+    },
+    {
+      "question": "Which type of network device is used to connect multiple LANs or WANs and route traffic between them?",
+      "options": ["a. Switch", "b. Router", "c. Modem", "d. Access Point"],
+      "answer": "b. Router",
+      "type": "single",
+      "explanation": "Routers connect and direct traffic between different networks, such as LANs and WANs. Switches connect devices within a LAN, modems connect local networks to ISPs, and access points facilitate wireless connections within a LAN."
+    },
+    {
+      "question": "What is the primary benefit of using fiber optic cables in a network?",
+      "options": ["a. Lower costs compared to other options", "b. Reduced power consumption", "c. Higher data speeds and longer distances", "d. Simpler installation process"],
+      "answer": "c. Higher data speeds and longer distances",
+      "type": "single",
+      "explanation": "Fiber optic cables offer high data speeds and can carry data over long distances without losing quality, unlike lower costs or reductions in power consumption. Installation can be complex and expensive."
+    },
+    {
+      "question": "In a SOHO network, what is often the combined role of the router?",
+      "options": ["a. Server management and desktop processing", "b. Routing, switching, and sometimes wireless access", "c. Only providing internet access", "d. Advanced data analytics"],
+      "answer": "b. Routing, switching, and sometimes wireless access",
+      "type": "single",
+      "explanation": "In a SOHO setup, a single device usually acts as a router (directing traffic), a switch (connecting devices), and sometimes a wireless access point, unlike roles focused on only one function."
+    },
+    {
+      "question": "What network type is best suited for connecting wearable technology like smartwatches to smartphones?",
+      "options": ["a. LAN", "b. MAN", "c. PAN", "d. WAN"],
+      "answer": "c. PAN",
+      "type": "single",
+      "explanation": "A Personal Area Network (PAN) is for short-range connections like those between a smartwatch and smartphone. LAN, MAN, and WAN cover larger areas and different types of connections."
+    },
+    {
+      "question": "What factor typically distinguishes Enterprise Networks from smaller networks?",
+      "options": ["a. Less reliability", "b. Fewer devices", "c. Greater complexity and scalability", "d. Single device management"],
+      "answer": "c. Greater complexity and scalability",
+      "type": "single",
+      "explanation": "Enterprise Networks are designed to handle complex tasks and a large number of users, offering scalability and reliability, unlike smaller networks which may use single device management."
+    },
+    {
+      "question": "What is the main function of a switch in a LAN?",
+      "options": ["a. Connecting devices and directing data within a network", "b. Providing internet access", "c. Analysing network traffic", "d. Connecting multiple networks"],
+      "answer": "a. Connecting devices and directing data within a network",
+      "type": "single",
+      "explanation": "Switches connect devices within a LAN and direct data to the correct destination. Routers provide internet access and connect networks, while analysing traffic is specialized and not a default function."
+    },
+    {
+      "question": "Which network type facilitates communication in a city-sized area through multiple connected networks?",
+      "options": ["a. WAN", "b. PAN", "c. MAN", "d. LAN"],
+      "answer": "c. MAN",
+      "type": "single",
+      "explanation": "A MAN covers large urban areas, connecting multiple networks like universities or municipal resources, whereas LANs are smaller, and WANs span larger areas across regions or countries."
+    },
+    {
+      "question": "How do storage area networks (SANs) improve storage management?",
+      "options": ["a. By simplifying configuration for home users", "b. By centralizing and managing storage resources efficiently", "c. By using standard home network tools", "d. By reducing storage to single hard drives"],
+      "answer": "b. By centralizing and managing storage resources efficiently",
+      "type": "single",
+      "explanation": "SANs centralize storage, allowing efficient management and high performance for server applications. They aren't simplified for home use or reduce resources to single hard drives."
+    }
+  ]

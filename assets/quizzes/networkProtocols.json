@@ -1,0 +1,177 @@
+[
+    {
+      "question": "An IPv6 address is made up of how many bits?",
+      "options": ["a. 32", "b. 48", "c. 64", "d. 128", "e. 256"],
+      "answer": "d. 128",
+      "type": "single",
+      "explanation": "IPv6 is a type of IP address used on the Internet. It has 128 bits, which is a lot more than IPv4 (32 bits). This means we can have many more devices connected to the internet."
+    },
+    {
+      "question": "Which Application-layer protocol provides remote access to a Windows computer via a GUI?",
+      "options": ["a. Telnet", "b. RDP", "c. SSH", "d. FTP"],
+      "answer": "b. RDP",
+      "type": "single",
+      "explanation": "RDP (Remote Desktop Protocol) allows you to connect to a Windows computer from another device and see the screen like you're sitting in front of it."
+    },
+    {
+      "question": "If a protocol is routable, at which TCP/IP layer does it operate?",
+      "options": ["a. Network access", "b. Internetwork", "c. Transport", "d. Application"],
+      "answer": "b. Internetwork",
+      "type": "single",
+      "explanation": "Routable means data can travel between different networks. The Internetwork layer (also known as the Internet layer) takes care of directing data to its destination."
+    },
+    {
+      "question": "Which Application-layer protocol is used to monitor and manage network devices, and what Transport-layer protocol does it use?",
+      "options": ["a. SMTP, UDP", "b. SNMP, TCP", "c. SMTP, TCP", "d. SNMP, UDP"],
+      "answer": "d. SNMP, UDP",
+      "type": "single",
+      "explanation": "SNMP (Simple Network Management Protocol) is used to check on and control network devices. It uses UDP because it's simple and doesn't need to check if data arrives successfully."
+    },
+    {
+      "question": "Which TCP/IP model layer takes a large chunk of data from the Application layer and breaks it into smaller segments?",
+      "options": ["a. Network access", "b. Internetwork", "c. Transport", "d. Application"],
+      "answer": "c. Transport",
+      "type": "single",
+      "explanation": "The Transport layer splits big data into smaller pieces called segments, making it easier to send over the network and reassemble at the other end."
+    },
+    {
+      "question": "Which of the following protocols resolves logical addresses to physical addresses?",
+      "options": ["a. DHCP", "b. TCP", "c. IP", "d. DNS", "e. ARP"],
+      "answer": "e. ARP",
+      "type": "single",
+      "explanation": "ARP (Address Resolution Protocol) matches IP addresses (logical) to MAC addresses (physical), helping devices on the same network find each other."
+    },
+    {
+      "question": "Which of the following protocols provides connectionless service? (Choose all that apply.)",
+      "options": ["a. IP", "b. UDP", "c. TCP", "d. HTTP"],
+      "answer": ["a. IP", "b. UDP"],
+      "type": "multiple",
+      "explanation": "Connectionless means the data just gets sent without checking if it got there. IP and UDP (User Datagram Protocol) send data without setting up a connection."
+    },
+    {
+      "question": "If you want to design an Application-layer protocol that provides fast, efficient communication and doesn't work with large amounts of data, what Transport-layer protocol would you design it to use?",
+      "options": ["a. IP", "b. UDP", "c. TCP", "d. HTTP"],
+      "answer": "b. UDP",
+      "type": "single",
+      "explanation": "UDP is great for quick, small data transmissions because it doesn’t worry about ensuring every bit of data is received correctly, making it faster."
+    },
+    {
+      "question": "Which of the following is the term for identifying packets used by TCP to establish a connection?",
+      "options": ["a. Port number indicators", "b. Multiwindow agreement", "c. Three-way handshake", "d. Sequencing establishment"],
+      "answer": "c. Three-way handshake",
+      "type": "single",
+      "explanation": "The Three-way handshake is how TCP starts a secure data connection. It’s like saying 'hello' three times to ensure both devices are ready to send and receive data."
+    },
+    {
+      "question": "What element of a DHCP server uses the client MAC address to ensure that the client is leased the same address each time it requests an IP address?",
+      "options": ["a. IP address scope", "b. Address exclusion", "c. Reservation", "d. ARP mapping"],
+      "answer": "c. Reservation",
+      "type": "single",
+      "explanation": "A Reservation means the DHCP server will always give the same IP address to a device based on its unique MAC address, which is like the device’s fingerprint."
+    },
+    {
+      "question": "Which of the following is the first packet sent when a computer wants to lease a new IP address?",
+      "options": ["a. DHCPAck", "b. DHCPDiscover", "c. DHCPRequest", "d. DHCPOffer"],
+      "answer": "b. DHCPDiscover",
+      "type": "single",
+      "explanation": "DHCPDiscover is like the computer sending out a message saying, 'Hello, I need an IP address!' to find a DHCP server."
+    },
+    {
+      "question": "Which of the following IPv6 features is an enhancement to IPv4? (Choose all that apply.)",
+      "options": ["a. Larger address space", "b. Works at the Internetwork and Transport layers", "c. Built-in security", "d. Connectionless communication"],
+      "answer": ["a. Larger address space", "c. Built-in security"],
+      "type": "multiple",
+      "explanation": "IPv6 has a much larger address space, meaning many more devices can have a unique address, and it comes with better built-in security features than IPv4."
+    },
+    {
+      "question": "Which protocol can configure a computer's IP address and subnet mask automatically?",
+      "options": ["a. TCP", "b. IP", "c. ARP", "d. DNS", "e. DHCP"],
+      "answer": "e. DHCP",
+      "type": "single",
+      "explanation": "DHCP automatically assigns IP addresses to devices on a network, saving you from having to do it manually for each device."
+    },
+    {
+      "question": "What type of packets are transmitted between a DHCP client and server when a client is initially leasing an IP address?",
+      "options": ["a. Broadcast", "b. Multicast", "c. Unicast", "d. Anycast"],
+      "answer": "a. Broadcast",
+      "type": "single",
+      "explanation": "Broadcast packets are sent to all devices in the network, helping the DHCP client find the server by calling out to everyone."
+    },
+    {
+      "question": "Which of the following accurately describes the .edu in the FQDN www.yc.edu?",
+      "options": ["a. Fully qualified domain name", "b. Top-level domain", "c. Root domain", "d. Second-level domain"],
+      "answer": "b. Top-level domain",
+      "type": "single",
+      "explanation": ".edu is a top-level domain indicating the type of organization, like education in this case, at the end of a web address."
+    },
+    {
+      "question": "What's another name for a DNS client?",
+      "options": ["a. Alias", "b. Reservation", "c. DDNS", "d. Resolver"],
+      "answer": "d. Resolver",
+      "type": "single",
+      "explanation": "A Resolver is a DNS client tasked with requesting and resolving domain names into IP addresses so you can access websites."
+    },
+    {
+      "question": "What type of resource record is an alias for another record?",
+      "options": ["a. MX", "b. AAAA", "c. CNAME", "d. PTR"],
+      "answer": "c. CNAME",
+      "type": "single",
+      "explanation": "A CNAME record is like a nickname that points to the real domain name, letting you use different names for the same website."
+    },
+    {
+      "question": "When a Windows computer is configured to use DHCP but no DHCP server is available, what type of address is configured automatically for it?",
+      "options": ["a. PAT", "b. APIPA", "c. NAT", "d. Static"],
+      "answer": "b. APIPA",
+      "type": "single",
+      "explanation": "APIPA assigns an internal IP address when there's no DHCP server available, so the computer can still communicate with others, although not go online."
+    },
+    {
+      "question": "Where does a DNS server look when it can't resolve a query from its zone records or cache?",
+      "options": ["a. Root hints", "b. Alternate server", "c. Top-level domain", "d. BIND"],
+      "answer": "a. Root hints",
+      "type": "single",
+      "explanation": "Root hints are the DNS server’s backup plan, a list of internet root servers it can ask for help when it doesn't know an answer."
+    },
+    {
+      "question": "What does the Transport layer use to identify source and destination Application-layer protocols?",
+      "options": ["a. Checksum", "b. TCP address", "c. Port number", "d. Root hints"],
+      "answer": "c. Port number",
+      "type": "single",
+      "explanation": "Port numbers help direct data to the correct program on your computer, like email or web browsing, within the Transport layer."
+    },
+    {
+      "question": "Which of the following Application-layer protocols typically uses the UDP Transport-layer protocol? (Choose all that apply.)",
+      "options": ["a. HTTP", "b. DNS", "c. DHCP", "d. FTP"],
+      "answer": ["b. DNS", "c. DHCP"],
+      "type": "multiple",
+      "explanation": "DNS and DHCP use UDP because their quick requests don't need constant checking for errors, making UDP fast and efficient."
+    },
+    {
+      "question": "Which is the correct order of headers, from left to right, in a completed frame?",
+      "options": ["a. Frame, TCP, IP", "b. UDP, frame, IP", "c. TCP, IP, frame", "d. Frame, IP, UDP"],
+      "answer": "d. Frame, IP, UDP",
+      "type": "single",
+      "explanation": "In networking, data packets are wrapped with headers. With Frame first, it wraps the data, followed by IP for location, and finally the transport protocol like UDP."
+    },
+    {
+      "question": "Which of the following is a task performed by the Network access layer? (Choose all that apply.)",
+      "options": ["a. Verifies that incoming frames have the correct destination MAC address", "b. Defines and verifies IP addresses", "c. Transmits and receives bit signals", "d. Resolves MAC addresses by using IP addresses", "e. Delivers packets efficiently"],
+      "answer": ["a. Verifies that incoming frames have the correct destination MAC address", "c. Transmits and receives bit signals"],
+      "type": "multiple",
+      "explanation": "The Network Access layer ensures data gets to the right device using MAC addresses and handles the physical sending and receiving of data (bit signals)."
+    },
+    {
+        "question": "When a device on a network wants to send data, what does it look for to verify another device's readiness to receive data?",
+        "options": ["a. ACK packet", "b. SYN packet", "c. RST packet", "d. FIN packet"],
+        "answer": "a. ACK packet",
+        "type": "single",
+        "explanation": "An ACK (Acknowledgement) packet is like a thumbs-up from one device to another, confirming they're ready to start receiving data. It ensures both devices are in sync before starting the information transfer."
+      },
+      {
+        "question": "Which protocol helps recover lost packets during data transmission?",
+        "options": ["a. IP", "b. UDP", "c. TCP", "d. SNMP"],
+        "answer": "c. TCP",
+        "type": "single",
+        "explanation": "TCP (Transmission Control Protocol) is designed to ensure all data sent gets to the right place, so if anything is lost during transmission, it will ask for those pieces to be sent again, ensuring complete data delivery."
+      }
+  ]
