@@ -1,0 +1,1471 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap");
+
+:root {
+  --color-body: #b6cbce;
+  --color-heading: #eef3db;
+  --color-base: #033f47;
+  --color-base2: #022a30;
+  --color-brand: #e0f780;
+  --color-brand2: #deff58;
+  --sidbar-width: 240px;
+  --font-base: "Bai Jamjuree";
+}
+
+body {
+  background-color: var(--color-base2);
+  color: var(--color-body);
+  font-family: var(--font-base), sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-heading);
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-body);
+  transition: all 0.4s ease;
+}
+
+a:hover {
+  color: var(--color-brand);
+}
+
+img {
+  width: 100%;
+}
+
+.text-brand {
+  color: var(--color-brand);
+}
+
+.text-brand2 {
+  font-weight: bold;
+}
+
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+.bg-base {
+  background-color: var(--color-base);
+}
+
+.full-height {
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.shadow-effect {
+  transition: all 0.5s;
+}
+
+.shadow-effect:hover {
+  box-shadow: -6px 6px 0 0 var(--color-brand);
+}
+
+.iconbox {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  background-color: var(--color-brand);
+  color: var(--color-base);
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: var(--color-base);
+}
+
+.navbar .nav-link {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.navbar .nav-link:hover {
+  color: var(--color-brand);
+}
+
+.navbar .nav-link.active {
+  color: var(--color-brand);
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    min-height: 100vh;
+    width: var(--sidbar-width);
+    background: linear-gradient(rgba(3, 63, 71, 0.8), rgba(3, 63, 71, 0.8)),
+      url(../images/sidebar-img.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .navbar-brand img {
+    border: 8px solid var(--color-brand);
+  }
+
+  /* CONTENT WRAPPER */
+  #content-wrapper {
+    padding-left: var(--sidbar-width);
+  }
+}
+
+/* BTN */
+.btn {
+  padding: 12px 28px;
+  font-weight: 700;
+}
+
+.btn-brand {
+  background-color: var(--color-brand);
+  border-color: var(--color-brand);
+  color: var(--color-base);
+}
+
+.btn-brand:hover,
+.btn-brand:focus {
+  background-color: var(--color-brand2);
+  color: var(--color-base);
+  border-color: var(--color-brand2);
+}
+
+.link-custom {
+  font-weight: 700;
+  position: relative;
+}
+
+.link-custom::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: var(--color-brand);
+  position: absolute;
+  left: 0;
+  top: 110%;
+  transition: all 0.4s;
+}
+
+.link-custom:hover::after {
+  width: 100%;
+}
+
+/* CARD */
+.card-custom .card-custom-image {
+  overflow: hidden;
+}
+
+.card-custom .card-custom-image img {
+  transition: all 0.4s ease;
+}
+
+.card-custom:hover .card-custom-image img {
+  transform: scale(1.1);
+}
+
+/* CONTACT */
+#contact .form-control {
+  background-color: var(--color-base);
+  border-color: var(--color-base);
+  color: var(--color-body);
+}
+
+#contact .form-control:focus {
+  border-color: var(--color-brand);
+  box-shadow: none;
+}
+
+#contact .form-control::placeholder {
+  color: var(--color-body);
+}
+
+#contact input.form-control {
+  height: 44px;
+}
+
+/* Feedback Message Styling */
+#form-message {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Success Feedback */
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+/* Error Feedback */
+.alert-danger {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+/* Ensure the form takes full width */
+form {
+  width: 100%;
+}
+
+/* END: CONTACT */
+
+/* testimonials */
+#testimonials {
+  padding: 60px 20px;
+}
+
+.testimonial-carousel h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.testimonial-content {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.testimonial-content .quote {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.testimonial-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.testimonial-content h5 {
+  font-size: 1.25rem;
+  margin-bottom: 25px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #333;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+/* //testimonials */
+
+/* Add Styling for the Toggle */
+
+/* Dark Mode Toggle */
+.dark-mode-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.dark-mode-toggle input {
+  display: none;
+  /* Hide the default checkbox */
+}
+
+.toggle-label {
+  width: 50px;
+  height: 25px;
+  background: var(--color-brand2);
+  border-radius: 25px;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease;
+}
+
+.toggle-label .slider {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  background: var(--color-base);
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+input:checked+.toggle-label {
+  background: var(--color-brand);
+  /* Change background when active */
+}
+
+input:checked+.toggle-label .slider {
+  transform: translateX(25px);
+  /* Move slider */
+}
+
+/* //Dark Mode Toggle */
+
+/* Add Dark Mode Styles */
+/* Dark Mode Styling */
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: #a2a2a2;
+}
+
+/* Button Styling */
+
+/* Navbar in Dark Mode */
+body.dark-mode .navbar {
+  background-color: #1a1a1a;
+  /* Matches body background */
+  color: #e4e4e4;
+}
+
+/* Card Styling in Dark Mode */
+body.dark-mode .card-custom,
+body.dark-mode .service,
+body.dark-mode .testimonial,
+body.dark-mode .infographic {
+  background-color: #232323;
+  color: #ffffff;
+  border: 1px solid #333333;
+}
+
+body.dark-mode .card-custom p {
+  color: #e4e4e4;
+  /* Lighter text for paragraphs */
+}
+
+/* //Add Dark Mode Styles */
+
+/* Animated Typing Effect for Headlines */
+#typing-text {
+  display: inline-block;
+  /* Keeps space consistent */
+  min-width: 150px;
+  /* Adjust based on the longest word */
+  text-align: center;
+  /* Center-align the text */
+}
+
+/* //Animated Typing Effect for Headlines */
+
+/* Styling the blinking cursor */
+.typed-cursor {
+  font-size: inherit;
+  /* Match the font size of the animated text */
+  color: var(--color-brand);
+  /* Match the color of the animated text */
+  animation: blink 0.7s infinite;
+  /* Blinking animation */
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+/* End: Styling the blinking cursor */
+
+/* Apply Animation to the Profile Picture */
+
+/* Keyframes for Animation */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Apply Animation on Hover */
+.navbar-brand img {
+  border-radius: 50%;
+  border: 5px solid var(--color-brand);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+  /* Make it interactive */
+}
+
+.navbar-brand img:hover {
+  animation: rotate 2s linear infinite, bounce 1s ease-in-out infinite;
+  /* Add rotate and bounce animations */
+  box-shadow: 0 0 15px var(--color-brand);
+  /* Glow effect */
+}
+
+/* END: Apply Animation to the Profile Picture */
+
+/* Skills Timeline and Goals */
+/* Section Styling */
+#skills-and-goals {
+  padding: 80px 0;
+}
+
+#skills-and-goals h6 {
+  color: var(--color-brand);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+#skills-and-goals h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Timeline Styling */
+.timeline {
+  list-style: none;
+  padding: 0;
+  position: relative;
+  border-left: 2px solid var(--color-brand);
+}
+
+.timeline li {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: -6px;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  background-color: var(--color-brand);
+  border-radius: 50%;
+}
+
+.timeline .year {
+  font-weight: bold;
+  color: var(--color-brand);
+  margin-bottom: 5px;
+}
+
+.timeline h4 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.timeline p {
+  margin: 0;
+  color: var(--color-body);
+}
+
+/* Goals Section Styling */
+.goals .goal h4 {
+  font-size: 1.2rem;
+  color: var(--color-brand);
+  margin-bottom: 10px;
+}
+
+.goals .goal p {
+  margin: 0;
+  color: var(--color-body);
+}
+
+/* END: Skills Timeline and Goals */
+
+/* Floating Chat Widget Styling */
+#custom-chat-widget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+/* Chat Icon */
+.custom-chat-icon {
+  width: 60px;
+  height: 60px;
+  background-color: #e0f780;
+  /* Change to your theme color */
+  color: #033f47;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.custom-chat-icon:hover {
+  transform: scale(1.1);
+  background-color: #deff58;
+}
+
+/* Chat Box */
+.custom-chat-box {
+  width: 300px;
+  height: 400px;
+  background-color: #f9f9f9;
+  /* Light background for readability */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.custom-chat-header {
+  background-color: #e0f780;
+  /* Header color */
+  color: #033f47;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.custom-chat-header h4 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.custom-btn-close {
+  background: none;
+  border: none;
+  color: #033f47;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.custom-chat-output {
+  flex-grow: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 8px;
+  /* Space between messages */
+}
+
+.custom-chat-output p {
+  margin-bottom: 10px;
+}
+
+.custom-chat-output .user-message {
+  background-color: #2d3640;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin: 8px 0;
+  max-width: 100%;
+  /* Restrict message width */
+  text-align: left;
+  line-height: 1.5;
+  /* Improve readability */
+  display: inline-block;
+  margin-left: auto;
+  /* Push user messages to the right */
+}
+
+.custom-chat-output .bot-message {
+  background-color: #f0f4fa;
+  color: #333;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin: 8px 0;
+  /* Space between messages */
+  max-width: 100%;
+  /* Restrict message width */
+  text-align: left;
+  line-height: 1.5;
+  /* Improve readability */
+  display: inline-block;
+}
+
+.custom-chat-footer {
+  display: flex;
+  border-top: 1px solid #033f47;
+  padding: 10px;
+}
+
+.custom-chat-footer input {
+  flex-grow: 1;
+  margin-right: 10px;
+  border: 1px solid #033f47;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.custom-chat-footer .custom-btn-brand {
+  padding: 5px 10px;
+  background-color: #033f47;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.custom-chat-footer .custom-btn-brand:hover {
+  background-color: #043137;
+  /* Slightly darker hover effect */
+}
+
+.custom-d-none {
+  display: none !important;
+}
+
+/* END: Floating Chat Widget Styling */
+
+/* START: Modal Title */
+.modal-title {
+  color: #004080;
+}
+
+/* Modal Body */
+.modal-body {
+  color: #333333;
+}
+
+.modal-scrollable {
+  max-height: 700px;
+  /* Adjust as needed */
+  overflow-y: auto;
+  /* Adds vertical scroll if content exceeds the height */
+  padding-right: 15px;
+  /* Prevent scrollbar from overlapping content */
+}
+
+/* text styles */
+.content-section {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-left: 5px solid #004080;
+  margin-top: 15px;
+}
+
+.modal-body.modal-scrollable h4,
+.modal-body.modal-scrollable h5 {
+  color: #004080;
+}
+
+.modal-body.modal-scrollable ul,
+.modal-body.modal-scrollable ol {
+  margin-left: 20px;
+}
+
+.modal-body.modal-scrollable p,
+.modal-body.modal-scrollable li {
+  margin-bottom: 10px;
+}
+
+.modal-body.modal-scrollable .highlight {
+  font-weight: bold;
+  color: #004080;
+}
+
+.modal-body.modal-scrollable .content-section {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-left: 5px solid #004080;
+  margin-top: 15px;
+}
+
+/* Model Video */
+video.rounded-4 {
+  border-radius: 12px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.8),
+    /* Dark shadow close to the video */
+    0px 20px 50px rgba(0, 0, 0, 0.4);
+  /* Lighter shadow for a realistic fade effect */
+  outline: none;
+  /* Removes any default outlines */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Smooth hover effect */
+}
+
+video.rounded-4:hover {
+  transform: scale(1.02);
+  /* Slight zoom-in on hover */
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.9), 0px 25px 60px rgba(0, 0, 0, 0.5);
+  /* Enhance shadow on hover */
+}
+
+/* END: Modal Title */
+
+
+/* START: Explore My Projects Page button */
+/* Icon Styling */
+.large-icon {
+  font-size: 3rem;
+  /* Make the icon larger */
+  color: var(--color-brand);
+  /* Use the brand color */
+  margin-bottom: 10px;
+  /* Add spacing below the icon */
+  transition: transform 0.4s ease, color 0.4s ease;
+  /* Smooth animation effects */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Pointing Animation */
+@keyframes point-to-button {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px);
+    /* Move down slightly */
+  }
+}
+
+.loop-animation {
+  animation: point-to-button 1s infinite ease-in-out;
+  /* Continuous pointing animation */
+}
+
+/* END: Explore My Projects Page button */
+
+/* START: NETWORKING CALCULATOR */
+.calculator-card {
+  background-color: #F5F8FA;
+}
+
+/* END: NETWORKING CALCULATOR */
+
+/* START: NETWORKING QUIZ SECTION */
+/* Styles for the Quiz Section */
+.quiz-section {
+  background-color: #0D1E26;
+  padding: 40px 0;
+}
+
+.quiz-title {
+  color: #C8FACC;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.quiz-card {
+  background-color: #113645;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.quiz-question {
+  color: #C8FACC;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.option-box {
+  background-color: #173F4F;
+  color: #C8FACC;
+  border: none;
+  margin: 10px 0;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  padding: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.option-box input {
+  margin-right: 10px;
+}
+
+.option-label {
+  margin-left: 10px;
+  font-size: 1.2rem;
+}
+
+.correct-answer {
+  background-color: #0B935E !important;
+}
+
+.wrong-answer {
+  background-color: #B03535 !important;
+}
+
+.feedback-box {
+  margin-top: 20px;
+  background-color: #173F4F;
+  color: #C8FACC;
+  padding: 10px;
+  border-radius: 10px;
+  display: none;
+}
+
+.quiz-submit {
+  background-color: #A3FFC8;
+  color: #173F4F;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+.quizSection-buttons {
+  background-color: #113645;
+  color: #C8FACC;
+  border-radius: 20px;
+}
+
+.quiz-next {
+  background-color: #C8FACC;
+  color: #173F4F;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  display: none;
+}
+
+.quiz-progress {
+  height: 20px;
+  background-color: #173F4F;
+  border-radius: 10px;
+}
+
+.quiz-progress .progress-bar {
+  background-color: #0B935E;
+}
+
+.quiz-progress-text {
+  color: #C8FACC;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.quiz-completed {
+  color: #C8FACC;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.quiz-final-score {
+  color: #C8FACC;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.quiz-final-details {
+  color: #C8FACC;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.streak-message {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-streak-card {
+  background-color: #e0f7fa;
+  border: 2px solid #00796b;
+  border-radius: 8px;
+  text-align: center;
+  color: #004d40;
+  padding: 20px;
+}
+
+.quiz-streak-card .streak-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.quiz-streak-card .streak-message-text {
+  font-size: 1rem;
+}
+
+/* --- ADDED CSS for Dropdown --- */
+.quiz-dropdown {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.dropdown-label {
+  color: #C8FACC;
+  font-size: 1.1rem;
+  margin-right: 10px;
+}
+
+#quiz-select {
+  background-color: #173F4F;
+  color: #C8FACC;
+  border-radius: 8px;
+  border: 1px solid #0B935E;
+  padding: 5px 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#quiz-select:focus {
+  outline: none;
+  border-color: #0B935E;
+}
+
+/* //Styles for the Quiz Section */
+
+/* Quiz Badge Achievements */
+.badges {
+  margin-top: 20px;
+  text-align: center;
+  /* Center align badges */
+}
+
+.badge {
+  display: inline-block;
+  /* Ensures badges stack inline */
+  margin: 10px;
+  padding: 15px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #113645;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.badge i {
+  margin-right: 10px;
+  /* Space between icon and text */
+  font-size: 1.5rem;
+  /* Larger icon size */
+}
+
+.badge:hover {
+  transform: translateY(-5px);
+  /* Lift the badge slightly */
+  background-color: #0b935e;
+  /* Change background color on hover */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  /* Add shadow for depth */
+}
+
+
+.review-question {
+  margin-bottom: 15px;
+  color: #C8FACC;
+}
+
+.review-question h4 {
+  color: #A3FFC8;
+  font-size: 1.2rem;
+}
+
+.review-question p {
+  font-size: 1rem;
+}
+
+/* Quiz Badge List */
+.badge-list .list-group-item {
+  background-color: #113645;
+  color: #C8FACC;
+}
+
+/* END: NETWORKING QUIZ SECTION */
+/* Style the optgroup labels */
+.quiz-dropdown select optgroup {
+  font-weight: bold;
+  color: #007bff;
+  /* Blue for labels */
+  padding: 5px;
+}
+
+/* Style the dropdown options */
+.quiz-dropdown select option {
+  padding: 5px;
+  color: #000;
+}
+
+/* Style the divider to look like an <hr> */
+.quiz-dropdown select option.dropdown-divider {
+  height: 1px;
+  background-color: #ccc;
+  margin: 5px 0;
+  border: none;
+  pointer-events: none;
+}
+
+/* END: NETWORKING QUIZ SECTION */
+
+/* Footer Section */
+.custom-footer {
+  background-color: #01363d;
+  /* Dark teal */
+  color: #d3e2e4;
+  text-align: center;
+  /* Center-align content */
+  padding: 50px 0;
+}
+
+.custom-footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Center all content horizontally */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.custom-footer .row {
+  width: 100%;
+  justify-content: space-between;
+  /* Maintain layout consistency */
+}
+
+.footer-brand {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.footer-logo {
+  width: 120px;
+  /* Set appropriate size */
+  height: auto;
+  /* Maintain aspect ratio */
+  display: inline-block;
+  border: 3px solid #E0F780;
+  /* Add a border to match the theme */
+  border-radius: 50%;
+  /* Make it circular */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  /* Add a subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Smooth transition for hover effects */
+}
+
+.footer-logo:hover {
+  transform: scale(1.1);
+  /* Slight zoom-in on hover */
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+  /* Enhance shadow on hover */
+}
+
+.footer-title {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #d3e2e4;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #9ac5c8;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #66a5ab;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  /* Align social icons at the center */
+  margin-top: 20px;
+}
+
+
+.social-icons a {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #15444D;
+  border-radius: 100px;
+  font-size: 1.5rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #E0F780;
+  transform: scale(1.1);
+}
+
+.footer-copyright {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #d3e2e4;
+}
+
+.footer-made-with {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #9ac5c8;
+}
+
+/* Modal Styling */
+.modal-content {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.modal-title {
+  color: #01363d;
+  font-weight: bold;
+}
+
+/* Footer Section */
+.custom-footer .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  /* Ensures responsiveness */
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* Adds spacing between links */
+}
+
+.footer-links li {
+  margin: 0;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #9ac5c8;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #E0F780;
+}
+
+.cus-modal-link {
+  color: #0606f6;
+}
+
+.cus-modal-link:hover {
+  color: #5214b5;
+  text-decoration: underline;
+}
+
+/* Align all footer links in a row */
+.custom-footer .row .col-lg-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.custom-footer .footer-title {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.custom-footer .footer-links {
+  text-align: left;
+  /* Align links to the left */
+}
+
+/* Divider Styling */
+.custom-divider {
+  border: 0;
+  height: 1px;
+  background: #9ac5c8;
+  margin: 20px 0;
+  opacity: 0.7;
+  /* Slight transparency for a subtle effect */
+}
+
+/* Copyright Modal Icon Styling */
+@keyframes bounce-modal-icon {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+    /* Initial and final position */
+  }
+
+  40% {
+    transform: translateY(-15px);
+    /* Move up */
+  }
+
+  60% {
+    transform: translateY(-7px);
+    /* Slight bounce */
+  }
+}
+
+/* Modal Icon Styling */
+.modal-icon {
+  width: 100px;
+  height: 100px;
+  background-color: #dc3545;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 2.5rem;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  animation: bounce-modal-icon 2s infinite;
+}
+
+.modal-icon:hover {
+  animation: none;
+  /* Stop bouncing on hover */
+  background-color: #f8d7da;
+  color: #dc3545;
+  transition: all 0.3s ease;
+}
+
+.footer-made-with {
+  text-align: center;
+  font-size: 1rem;
+  color: #E0F780;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.footer-flag {
+  width: 20px;
+  height: auto;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+/* END: FOOTER */
+
+/* Custom Accordion and Modal Design */
+
+/* 
+ * ACCORDION CONTAINER 
+ * Applies to #networkingAccordion AND any .accordion inside .modal 
+ */
+.my-pagination-modal .modal-content {
+  background-color: #032A30 !important;
+  color: #B6CBCE;
+}
+
+.my-pagination-modal .modal-header {
+  background-color: #022A30;
+  color: #B6CBCE;
+  border-bottom: 1px solid #044247;
+}
+
+/* If you want a custom style for the title */
+.my-pagination-modal .modal-title {
+  color: #E0F780;
+}
+
+/* Style the close (X) button */
+.my-pagination-modal .btn-close {
+  filter: invert(100%);
+  /* This trick inverts the default dark icon to a light icon.
+     Alternatively, use a custom close icon with a different approach. */
+}
+
+/* Accordion Container */
+#networkingAccordion,
+.modal .accordion {
+  background-color: #033F47;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ACCORDION ITEM */
+#networkingAccordion .accordion-item,
+.modal .accordion-item {
+  background-color: #033F47;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* ACCORDION HEADER */
+#networkingAccordion .accordion-header,
+.modal .accordion-header {
+  margin-top: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+#networkingAccordion .accordion-header i,
+.modal .accordion-header i {
+  margin-right: 10px;
+  /* icon spacing */
+}
+
+/* ACCORDION BUTTON (collapsed) */
+#networkingAccordion .accordion-button,
+.modal .accordion-button {
+  background-color: #084851;
+  color: #C8FACC;
+  font-weight: bold;
+  border: 1px solid #083b41;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(238, 217, 217, 0.1);
+  padding: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+/* ACCORDION BUTTON :HOVER */
+#networkingAccordion .accordion-button:hover,
+.modal .accordion-button:hover {
+  background-color: #083b41;
+  transform: scale(1.02);
+  border: 1px solid #083b41;
+}
+
+/* ACCORDION BUTTON (expanded) */
+#networkingAccordion .accordion-button:not(.collapsed),
+.modal .accordion-button:not(.collapsed) {
+  background-color: #083b41;
+  color: #E0F780;
+  font-weight: bold;
+  border: 1px solid #083b41;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* ACCORDION BODY */
+#networkingAccordion .accordion-body,
+.modal .accordion-body {
+  background-color: #083b41;
+  color: whitesmoke;
+  padding: 1.5rem;
+  margin: 0;
+  border-radius: 8px;
+  box-shadow: none;
+  transition: none;
+}
+
+/* End: Custom Accordion Design */
+
+
+/* START: Styling for Pagination in the accordion */
+.pagination {
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.pagination .page-link {
+  color: whitesmoke;
+  background-color: #084851;
+  border-color: #084851;
+  text-decoration: none;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #033138;
+  color: #fff;
+}
+
+.page-content {
+  padding: 1rem 0;
+}
+
+/* END: Styling for Pagination in the accordion */
+
+/* START: note-taking Styles in the modal for Notes */
+.custom-list {
+  list-style: none;
+  padding: 0;
+}
+
+.custom-list li {
+  margin: 5px 0;
+  padding-left: 20px;
+  position: relative;
+}
+
+.custom-list li::before {
+  content: '\f101';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  color: #c8ff00;
+}
+
+/* END: note-taking Styles in the modal for Notes */
