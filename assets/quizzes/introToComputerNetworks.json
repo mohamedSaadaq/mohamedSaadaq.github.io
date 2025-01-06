@@ -1,0 +1,184 @@
+[
+    {
+      "question": "Which of the following is one of the three basic functions a computer performs? (Choose three.)",
+      "options": ["a. Processing", "b. Internet access", "c. Input", "d. Graphics", "e. Output", "f. E-mail"],
+      "answer": ["a. Processing", "c. Input", "e. Output"],
+      "type": "multiple",
+      "explanation": "Computers need to do three main things: 1) Take in information (Input), like typing on a keyboard. 2) Work on that information (Processing), like calculations. 3) Show results (Output), like displaying text on a screen. Internet access, graphics, and email are tasks, not basic functions."
+    },
+    {
+      "question": "Which computer component executes instructions provided by computer programs?",
+      "options": ["a. CPU", "b. NIC", "c. Hard drive", "d. USB"],
+      "answer": "a. CPU",
+      "type": "single",
+      "explanation": "The CPU (Central Processing Unit) is like the brain of the computer. It carries out instructions from software. NIC helps connect to networks, hard drives store data, and USB is for connecting devices, but none execute instructions."
+    },
+    {
+      "question": "What do you call each of the processors inside a CPU?",
+      "options": ["a. I/O", "b. Core", "c. OS", "d. Flash"],
+      "answer": "b. Core",
+      "type": "single",
+      "explanation": "A core is one of the processing units inside a CPU. More cores mean the CPU can do more tasks at once, like a quad-core CPU can handle four tasks. I/O is data transfer, OS is system software, and flash is memory storage."
+    },
+    {
+      "question": "Which of the following is considered long-term storage? (Choose two.)",
+      "options": ["a. USB or flash drive", "b. RAM", "c. Working storage", "d. Hard drive"],
+      "answer": ["a. USB or flash drive", "d. Hard drive"],
+      "type": "multiple",
+      "explanation": "Hard drives and USB/flash drives keep data stored even when the computer is off, which makes them long-term storage. RAM and working storage are temporary and lose data when power is lost."
+    },
+    {
+      "question": "Which motherboard component controls data transfers between memory, expansion slots, I/O devices, and the CPU?",
+      "options": ["a. Connectors", "b. BIOS", "c. Chipset", "d. PCI Express"],
+      "answer": "c. Chipset",
+      "type": "single",
+      "explanation": "The chipset manages data flow between key parts like CPU, RAM, and other devices. Connectors are where devices are plugged in, BIOS starts the system, and PCI Express is for high-speed component connections."
+    },
+    {
+      "question": "You want to purchase a high-performance graphics card for your computer. Which type of connector should it have?",
+      "options": ["a. PCI", "b. SATA", "c. IDE", "d. PCI Express"],
+      "answer": "d. PCI Express",
+      "type": "single",
+      "explanation": "PCI Express slots are designed for high-speed performance, perfect for modern graphics cards. PCI is older, SATA is for storage, and IDE is outdated for these purposes."
+    },
+    {
+      "question": "What is the term for the time it takes for read/write heads to move to the correct spot on the hard disk platter?",
+      "options": ["a. Seek time", "b. Transfer time", "c. Access time"],
+      "answer": "a. Seek time",
+      "type": "single",
+      "explanation": "Seek time is how long it takes the hard drive's heads to find the right spot on the disk. Transfer time is about moving data, and access time includes all delays before data starts transferring."
+    },
+    {
+      "question": "Which of the following is a task usually performed by the firmware? (Choose two.)",
+      "options": ["a. Perform a POST.", "b. Create an interrupt.", "c. Store the operating system.", "d. Begin the boot procedure."],
+      "answer": ["a. Perform a POST.", "d. Begin the boot procedure."],
+      "type": "multiple",
+      "explanation": "Firmware starts with POST (a check that your computer's parts work) and then begins loading your operating system. Creating an interrupt is managing signals, and OSs are stored on the hard drive, not in firmware."
+    },
+    {
+      "question": "Which of the following is the correct order of the steps of the boot procedure? 1. The OS is loaded into RAM. 2. CPU starts. 3. OS services are started. 4. Power is applied. 5. The POST is executed. 6. Boot devices are searched.",
+      "options": ["a. 2, 4, 6, 1, 3, 5", "b. 1, 5, 2, 4, 3, 6", "c. 4, 2, 5, 6, 1, 3", "d. 5, 4, 1, 3, 2, 6"],
+      "answer": "c. 4, 2, 5, 6, 1, 3",
+      "type": "single",
+      "explanation": "First, you power it up, starting the CPU. Then, the system does a POST, searches for a boot device, loads the OS into RAM, and finally starts OS services in that sequence."
+    },
+    {
+      "question": "You have just installed a new NIC in your PC to replace the old one that had started malfunctioning. What additional software must be installed to allow the OS to communicate with the new NIC?",
+      "options": ["a. Network application", "b. Device driver", "c. BIOS", "d. Protocol"],
+      "answer": "b. Device driver",
+      "type": "single",
+      "explanation": "Device drivers ensure the operating system can use specific hardware like the new NIC. They tell the OS how to interact with it. Network applications are user software, BIOS starts the computer, and protocols are communication rules."
+    },
+    {
+      "question": "Which of the following requests information stored on another computer?",
+      "options": ["a. NIC", "b. Network client", "c. Network server", "d. Network protocol", "e. Device driver"],
+      "answer": "b. Network client",
+      "type": "single",
+      "explanation": "A network client asks for data from a server. Your computer becomes a client when browsing the web. NIC is the network card, a server provides data, protocols are rules for communication, and device drivers help devices work with the OS."
+    },
+    {
+      "question": "Choose the correct order for the process of a user attempting to access network resources: 1. Network protocol 2. Application 3. Network client 4. NIC driver",
+      "options": ["a. 4, 2, 1, 3", "b. 3, 2, 1, 4", "c. 1, 4, 2, 3", "d. 2, 3, 1, 4", "e. 3, 1, 2, 4"],
+      "answer": "d. 2, 3, 1, 4",
+      "type": "single",
+      "explanation": "The user starts with an application, which uses the network client software. The client sends data with protocols following network rules, and the NIC driver helps send that data over the network."
+    },
+    {
+      "question": "TCP/IP is an example of which of the following?",
+      "options": ["a. NIC", "b. Network client", "c. Network server", "d. Network protocol", "e. Device driver"],
+      "answer": "d. Network protocol",
+      "type": "single",
+      "explanation": "TCP/IP is the set of rules (protocols) for how data is packaged, sent, and read across networks. NIC is hardware, a client initiates data requests, servers provide data, and drivers enable hardware communication."
+    },
+    {
+      "question": "In network communication, what type of address is used to deliver a frame to the correct computer on the network? (Choose two.)",
+      "options": ["a. MAC", "b. Logical", "c. IP", "d. Physical"],
+      "answer": ["a. MAC", "d. Physical"],
+      "type": "multiple",
+      "explanation": "A MAC address, also called a physical address, is the unique identifier for network hardware, ensuring the data is sent to the right device within the same network. IP addresses are logical, used for broader addressing."
+    },
+    {
+      "question": "What type of message is used to determine whether a computer is listening on the network?",
+      "options": ["a. MAC", "b. Ping", "c. IP", "d. TCP"],
+      "answer": "b. Ping",
+      "type": "single",
+      "explanation": "A Ping checks if a device is reachable by sending a data packet and waiting for a reply. It's like saying 'hello' to another computer. MAC identifies network devices, IP shows device location, and TCP ensures reliable data transfer."
+    },
+    {
+      "question": "What does TCP/IP use to look up a computer's IP address, given its name?",
+      "options": ["a. DNS", "b. Ping", "c. MAC", "d. TCP"],
+      "answer": "a. DNS",
+      "type": "single",
+      "explanation": "DNS translates website names like google.com into IP addresses that computers use to identify each other. Ping checks for connectivity, MAC is a hardware identifier, and TCP ensures reliable data transmission."
+    },
+    {
+      "question": "What is the unit of information containing MAC addresses and an error-checking code that's processed by the network interface layer?",
+      "options": ["a. Packet", "b. Ping", "c. Frame", "d. Chunk"],
+      "answer": "c. Frame",
+      "type": "single",
+      "explanation": "A frame contains MAC addresses and error-checking info and is handled by the network layer to ensure data goes to the right device. Packets are larger bundles of data, ping is a network test, and chunk is a generic term."
+    },
+    {
+      "question": "Data is processed from the time an application creates it to the time it reaches the network medium. This process includes adding information such as addresses and is called which of the following?",
+      "options": ["a. Packetization", "b. Encapsulation", "c. Deencapsulation", "d. Layering"],
+      "answer": "b. Encapsulation",
+      "type": "single",
+      "explanation": "Encapsulation wraps data with headers and maybe trailers as it moves through the network steps, ensuring it's properly addressed and formatted. Packetization breaks data into packets, deencapsulation removes headers on the receiving end, and layering is the general structure."
+    },
+    {
+      "question": "You're the network administrator for a company that has just expanded from one floor to two floors of a large building, and the number of workstations you need has doubled from 50 to 100. You're concerned that network performance will suffer if you add computers to the existing LAN. In addition, new users will be working in a separate business unit, and there are reasons to logically separate the two groups of computers. What type of network should you configure?",
+      "options": ["a. WAN", "b. MAN", "c. Internetwork", "d. Extended LAN"],
+      "answer": "c. Internetwork",
+      "type": "single",
+      "explanation": "An internetwork links two or more networks while keeping them logically separate, helping manage workload and security better. WANs cover large distances, MANs cover cities, and extended LANs could cause congestion."
+    },
+    {
+      "question": "Which of the following best describes a client?",
+      "options": ["a. A computer's primary role in the network is to give other computers access to network resources and services.", "b. A computer's primary role in the network is to run user applications and access network resources.", "c. It's the software that responds to requests for network resources.", "d. The OS installed on a computer is designed mainly to share network resources."],
+      "answer": "b. A computer's primary role in the network is to run user applications and access network resources.",
+      "type": "single",
+      "explanation": "A client runs applications and accesses resources, unlike a server, which provides those. Network resource sharing is provided by servers, and the OS that facilitates this clients access."
+    },
+    {
+      "question": "You work for a small company with four users who need to share information on their computers. The budget is tight, so the network must be as inexpensive as possible. What type of network should you install?",
+      "options": ["a. Server-based network", "b. Peer-to-peer network", "c. Wide area network", "d. Storage area network"],
+      "answer": "b. Peer-to-peer network",
+      "type": "single",
+      "explanation": "A peer-to-peer network is cheap and easy for a small group, with each computer both accessing and providing resources directly. Server-based networks require more setup, WANs connect remote networks, and SANs dedicate storage solutions."
+    },
+    {
+      "question": "Which of the following characteristics is associated with a peer-to-peer network? (Choose three.)",
+      "options": ["a. Decentralized data storage", "b. Inexpensive", "c. User-managed resources", "d. Centralized control", "e. Uses a directory service"],
+      "answer": ["a. Decentralized data storage", "b. Inexpensive", "c. User-managed resources"],
+      "type": "multiple",
+      "explanation": "In a peer-to-peer network, there's no central authority; each user manages their own resources, making it cheap and simple. Centralized control and directory services are normally part of a server-based network."
+    },
+    {
+      "question": "A device interconnects five computers and a printer in a single office so that users can share the printer. This configuration is an example of which of the following?",
+      "options": ["a. LAN", "b. MAN", "c. WAN", "d. Internetwork"],
+      "answer": "a. LAN",
+      "type": "single",
+      "explanation": "A LAN (Local Area Network) connects devices in one location like a single office. An internetwork links multiple LANs, a MAN covers a city, and a WAN spans large distances."
+    },
+    {
+      "question": "A company has just made an agreement with another organization to share their two networks' resources by using TCP/IP protocols. What best describes this arrangement?",
+      "options": ["a. MAN", "b. LAN", "c. Intranet", "d. Extranet"],
+      "answer": "d. Extranet",
+      "type": "single",
+      "explanation": "An Extranet connects two organizations securely for sharing resources. A LAN is internal, covering small areas, an intranet is a private network within one organization, and a MAN is for city-wide networks."
+    },
+    {
+      "question": "You have installed Windows Server on a new server and want to centralize user logons and security policies. What type of software should you install and configure on this server?",
+      "options": ["a. Naming services", "b. Application services", "c. Communication services", "d. Directory services"],
+      "answer": "d. Directory services",
+      "type": "single",
+      "explanation": "Directory services manage user data, security, and resources centrally, making it key for managing logins and security policies. Naming services handle name resolution like DNS, applications run user software, and communication services manage network info."
+    },
+    {
+      "question": "A network interface can transfer data at 1 Gbps. Approximately how many bytes can the interface transfer per second?",
+      "options": ["a. 1 billion", "b. 125 million", "c. 100,000", "d. 8 billion"],
+      "answer": "b. 125 million",
+      "type": "single",
+      "explanation": "1 Gigabit per second is 1 billion bits. Divide by 8 bits per byte to find how many bytes: 125 million bytes per second. 1 billion is bits, not bytes; 100,000 is too little, and 8 billion wrongly treats bits and bytes as the same."
+    }
+  ]

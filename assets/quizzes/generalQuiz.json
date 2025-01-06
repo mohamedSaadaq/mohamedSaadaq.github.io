@@ -1,0 +1,74 @@
+[
+    {
+      "question": "Which of the following are types of cyberattacks?",
+      "options": ["Phishing", "DDoS", "Trojan", "Router"],
+      "answer": ["Phishing", "DDoS", "Trojan"],
+      "type": "multiple",
+      "explanation": "Phishing, DDoS, and Trojan are examples of cyberattacks, whereas a router is a networking device."
+    },
+    {
+      "question": "What is a firewall used for?",
+      "options": [
+        "Encrypting data",
+        "Blocking unauthorized access",
+        "Storing data",
+        "Monitoring network traffic"
+      ],
+      "answer": "Blocking unauthorized access",
+      "type": "single",
+      "explanation": "Firewalls prevent unauthorized access to or from private networks."
+    },
+    {
+        "question": "Which of the following are open-source operating systems?",
+        "options": ["Linux", "Windows", "macOS", "Ubuntu"],
+        "answer": ["Linux", "Ubuntu"],
+        "type": "multiple",
+        "explanation": "Linux and Ubuntu are open-source operating systems, while Windows and macOS are proprietary."
+      },
+      {
+        "question": "What does the 'cd' command do in a terminal?",
+        "options": [
+          "Changes the current directory",
+          "Deletes a file",
+          "Creates a directory",
+          "Displays the current path"
+        ],
+        "answer": "Changes the current directory",
+        "type": "single",
+        "explanation": "The 'cd' command is used to navigate between directories."
+      },
+      {
+        "question": "Which of the following are cloud service providers?",
+        "options": ["AWS", "Google Cloud", "Microsoft Azure", "Docker"],
+        "answer": ["AWS", "Google Cloud", "Microsoft Azure"],
+        "type": "multiple",
+        "explanation": "AWS, Google Cloud, and Microsoft Azure are cloud service providers, while Docker is a containerization platform."
+      },
+      {
+        "question": "What does IaaS stand for?",
+        "options": [
+          "Infrastructure as a Service",
+          "Information as a Service",
+          "Integration as a Service",
+          "Innovation as a Service"
+        ],
+        "answer": "Infrastructure as a Service",
+        "type": "single",
+        "explanation": "IaaS provides virtualized computing resources over the internet."
+      },
+      {
+        "question": "Which of the following devices reduce broadcast domains?",
+        "options": ["Router", "Switch", "Hub", "Repeater"],
+        "answer": ["Router", "Switch"],
+        "type": "multiple",
+        "explanation": "Routers and switches reduce broadcast domains, while hubs and repeaters do not."
+      },
+      {
+        "question": "What device connects two different networks?",
+        "options": ["Router", "Switch", "Hub", "Firewall"],
+        "answer": "Router",
+        "type": "single",
+        "explanation": "Routers connect and forward traffic between different networks."
+      }
+  ]
+  

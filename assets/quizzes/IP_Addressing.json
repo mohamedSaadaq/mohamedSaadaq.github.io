@@ -1,0 +1,191 @@
+[
+    {
+      "question": "An IPv6 address is made up of how many bits?",
+      "options": ["a. 32", "b. 48", "c. 64", "d. 128", "e. 256"],
+      "answer": "d. 128",
+      "type": "single",
+      "explanation": "An IPv6 address has 128 bits, which means it can hold a lot of information. Think of it like a bigger storage box compared to IPv4, which only has 32 bits. IPv6 uses 8 groups of numbers to represent these bits and uses hexadecimal instead of just numbers. This extra space helps support more devices on the internet. The options 32, 48, 64, and 256 are not the correct sizes for IPv6 addresses."
+    },
+    {
+      "question": "The subnet mask of an IP address does which of the following?",
+      "options": ["a. Provides encryption in a TCP/IP network", "b. Defines network and host portions of an IP address", "c. Allows automated IP address configuration", "d. Allows users to use a computer's name rather than its address"],
+      "answer": "b. Defines network and host portions of an IP address",
+      "type": "single",
+      "explanation": "A subnet mask helps split an IP address into two parts: one part identifies the network, and the other part identifies the specific device (host) within that network. This makes it easier for networks to manage device addresses and ensures data is sent to the right place. Subnet masks don't encrypt data, don't configure settings automatically (that's DHCP), and aren't for using computer names (that's DNS)."
+    },
+    {
+      "question": "Which of the following is needed if a computer with the IP address 172.31.210.10/24 wants to communicate with a computer with the IP address 172.31.209.122/24?",
+      "options": ["a. Hub", "b. Router", "c. Switch", "d. Server"],
+      "answer": "b. Router",
+      "type": "single",
+      "explanation": "A router is needed when two devices are on different subnets. In this example, the computers are on different subnets because their network parts of the addresses don't match. Routers help direct traffic between these separate networks. A hub or a switch only connects devices on the same network and doesn’t help talk to different ones, and servers aren't used to manage network traffic between devices."
+    },
+    {
+      "question": "Which of the following is a private IP address and can't be routed across the Internet?",
+      "options": ["a. 192.156.90.100", "b. 172.19.243.254", "c. 11.200.99.180", "d. 221.24.250.207", "e. 12.12.12.12"],
+      "answer": "b. 172.19.243.254",
+      "type": "single",
+      "explanation": "Private IP addresses, like 172.19.243.254, are used within local networks in homes or offices and are not meant to be accessed directly through the internet. They are secure within their local area. The ranges for private IP addresses are specific (like 172.16.0.0 to 172.31.255.255), while the other options are public IP addresses that can be accessed over the internet."
+    },
+    {
+      "question": "Which command should you use with a dual-homed server to make sure the server sends packets out the correct interface?",
+      "options": ["a. ipconfig", "b. ping", "c. tracert", "d. route"],
+      "answer": "d. route",
+      "type": "single",
+      "explanation": "When a server has two network interfaces, 'route' is the tool used to manage which interface to use for sending traffic based on the destination address. This helps direct data properly. 'ipconfig' shows current settings, 'ping' checks if another device is reachable, and 'tracert' shows the path data takes but doesn't set paths."
+    },
+    {
+      "question": "Which command should you use to configure the primary DNS server on your computer?",
+      "options": ["a. ipconfig", "b. netsh", "c. nslookup", "d. arp"],
+      "answer": "b. netsh",
+      "type": "single",
+      "explanation": "'netsh' is used to change network settings, like setting which DNS server your computer talks to for resolving domain names into IP addresses. 'ipconfig' shows current settings, 'nslookup' is for looking up DNS info but not setting it, and 'arp' deals with IP-to-hardware addresses and doesn't touch DNS."
+    },
+    {
+      "question": "Which IP address expressed in CIDR notation has the subnet mask 255.255.255.0?",
+      "options": ["a. 10.100.44.123/24", "b. 172.16.88.222/16", "c. 192.168.100.1/26", "d. 172.29.111.201/18"],
+      "answer": "a. 10.100.44.123/24",
+      "type": "single",
+      "explanation": "CIDR notation like /24 describes how many of the leftmost bits of the address are used for the network part, which equals a traditional subnet mask of 255.255.255.0. It's like saying 'this much is for the whole neighborhood, the rest is for each house.' Options b, c, and d use different subnet sizes."
+    },
+    {
+      "question": "Which IP network address expressed in CIDR notation can support a maximum of 1022 hosts?",
+      "options": ["a. 10.100.44.0/24", "b. 172.16.4.0/22", "c. 192.168.100.64/26", "d. 172.29.128.0/18"],
+      "answer": "b. 172.16.4.0/22",
+      "type": "single",
+      "explanation": "A network with a /22 subnet mask can have 1022 useable devices. It holds 2, 3, and 4 for start and end network things but leaves the rest for devices. /24 offers fewer spaces, /26 even less, and /18 more than needed."
+    },
+    {
+      "question": "The IP address 10.240.0.0/8 can't be assigned to a host. True or False?",
+      "options": ["True", "False"],
+      "answer": "True",
+      "type": "single",
+      "explanation": "The address 10.240.0.0/8 is a 'network address,' which is kind of like a label for organizing devices within that group, so it can't be given to any single device. This applies to the address at the start of any group."
+    },
+    {
+      "question": "What's the term for each grouping of 8 bits in an IP address?",
+      "options": ["a. Quartet", "b. Quintet", "c. Hexadecimal", "d. Octet"],
+      "answer": "d. Octet",
+      "type": "single",
+      "explanation": "An octet is 8 bits long, represented as numbers from 0-255 in regular IP addresses. It’s called this way because there are four sections in an IPv4 address, like four small groups in a team. Other terms here mean different group sizes or systems (not bits)."
+    },
+    {
+      "question": "When using TCP/IP, which of the following must computers on the same logical network have in common? (Choose all that apply.)",
+      "options": ["a. Network ID", "b. Host ID", "c. Subnet mask", "d. Computer name"],
+      "answer": ["a. Network ID", "c. Subnet mask"],
+      "type": "multiple",
+      "explanation": "Computers on the same network share the network ID and subnet mask to know they belong to the same group. This way, they can find each other easily without using other tools. Each device still needs its unique host ID (like a phone number within the area code), and computer names are more for people to use than for machines."
+    },
+    {
+      "question": "Which of the following IPv6 features is an enhancement to IPv4? (Choose all that apply.)",
+      "options": ["a. Larger address space", "b. Works at the Internetwork and Transport layers", "c. Built-in security", "d. Connectionless communication"],
+      "answer": ["a. Larger address space", "c. Built-in security"],
+      "type": "multiple",
+      "explanation": "IPv6 gives us a lot more numbers for devices (Larger address space) and includes security tools automatically, helping keep things safe. It also does the same work as IPv4 at certain layers (Internetwork), and both support connectionless communication for some data tasks. IPv6 just has more ways to manage that traffic."
+    },
+    {
+      "question": "Which protocol can configure a computer's IP address and subnet mask automatically?",
+      "options": ["a. TCP", "b. IP", "c. ARP", "d. DNS", "e. DHCP"],
+      "answer": "e. DHCP",
+      "type": "single",
+      "explanation": "DHCP (Dynamic Host Configuration Protocol) automatically gives computers IP addresses, subnet masks, and other network settings when they connect. It’s like an automatic address book. TCP, IP, ARP, and DNS do different jobs with data transfer, addressing, or name-resolving."
+    },
+    {
+      "question": "How many bits must be reallocated from a host ID to a network ID to create 16 subnets?",
+      "options": ["a. 6", "b. 4", "c. 16", "d. 28"],
+      "answer": "b. 4",
+      "type": "single",
+      "explanation": "To divide a network into 16 parts (subnets), you take 4 bits from the host part to help define more network parts. This allows for a nice balance between managing many networks while leaving some space for different devices to connect, using the formula 2^n=16 where n is the number of bits borrowed."
+    },
+    {
+      "question": "For the Class C network address 192.168.10.0, which of the following subnet masks provides 32 subnets?",
+      "options": ["a. 255.255.255.252", "b. 255.255.255.248", "c. 255.255.255.240", "d. 255.255.255.224"],
+      "answer": "d. 255.255.255.224",
+      "type": "single",
+      "explanation": "Using 255.255.255.224 as a subnet mask lets you divide the address into 32 smaller groups (subnets), each fitting a few devices. This is helpful when you want to organize smaller segments, available with the formula 2^5=32 for the extra bits."
+    },
+    {
+      "question": "How many host bits are necessary to assign addresses to 62 hosts?",
+      "options": ["a. 6", "b. 5", "c. 4", "d. 3"],
+      "answer": "a. 6",
+      "type": "single",
+      "explanation": "Using 6 bits lets you cover enough addresses for 62 devices, because it gives you 64 total possibilities, minus 2 for necessary network purposes, like start and finish markers. This ensures everyone gets a unique piece without running out."
+    },
+    {
+      "question": "Which IP addressing process enables workstations to use private IP addresses to access the Internet?",
+      "options": ["a. Supernetting", "b. NAT", "c. DHCP", "d. Subnetting"],
+      "answer": "b. NAT",
+      "type": "single",
+      "explanation": "NAT (Network Address Translation) swaps private IP addresses (used in homes or offices) with public ones when accessing the Internet, keeping devices safe and organized. Supernetting combines networks, DHCP assigns IPs, and Subnetting splits networks but doesn’t change how they access the internet."
+    },
+    {
+      "question": "When a Windows computer is configured to use DHCP but no DHCP server is available, what type of address is configured automatically for it?",
+      "options": ["a. PAT", "b. APIPA", "c. NAT", "d. Static"],
+      "answer": "b. APIPA",
+      "type": "single",
+      "explanation": "APIPA assigns an IP from the 169.254 range if there's no DHCP server to give one. This lets devices talk to each other nearby but not over the Internet. PAT and NAT change addresses for traveling data, and static means a manually set IP."
+    },
+    {
+      "question": "Which of the following represents a valid IPv6 address?",
+      "options": ["a. 2001:345:abed:0:230:44", "b. 2001:345:abcd::BEEF:44", "c. 2001:345::abed:0:79f::230:44", "d. 2001:345:abed:0:FEED:230:44"],
+      "answer": "b. 2001:345:abcd::BEEF:44",
+      "type": "single",
+      "explanation": "A valid IPv6 address can shorten blocks of zeros with '::' once, which answer b does correctly. Addr options with '::' used more than once or not filling the needed spots are incorrect."
+    },
+    {
+      "question": "Which of the following is a reason to subnet? (Choose all that apply.)",
+      "options": ["a. Networks can be divided into logical groups.", "b. Subnetting eliminates the need for routers.", "c. Subnetting can decrease the size of broadcast domains.", "d. There's no need to assign static IP addresses to each computer."],
+      "answer": ["a. Networks can be divided into logical groups.", "c. Subnetting can decrease the size of broadcast domains."],
+      "type": "multiple",
+      "explanation": "Subnetting divides larger networks into smaller ones for easier management and reduces loud network chatter (broadcasts), helping efficiency. Routers are still needed but have clearer paths, and static IPs might still be necessary based on needs."
+    },
+    {
+      "question": "Which of the following IP addresses has 12 bits in the host ID?",
+      "options": ["a. 172.31.21.12/16", "b. 172.31.89.100/12", "c. 12.49.127.88/8", "d. 12.156.109.252/20"],
+      "answer": "d. 12.156.109.252/20",
+      "type": "single",
+      "explanation": "Subtracting 20 (network bits) from 32 (total) leaves 12 bits for hosts in the address. This option fits that exact scenario, helping identify specific devices within a network segment."
+    },
+    {
+      "question": "You have a server with two NICs, each attached to a different IP network. You're having problems communicating with devices on remote networks that send packets to one of the interfaces. The server receives the packets fine, but the server's replies never reach the intended destination network. Replies to packets that come in through the other interface seem to reach their destination without any problems. What can you do that will most likely solve the problem?",
+      "options": ["a. Configure a second default gateway on the interface exhibiting problems.", "b. Change the default gateway to use the router that's on the network of the interface exhibiting problems.", "c. Use the route command to add routes to the networks that aren't receiving replies.", "d. Replace the NIC that's having problems replying to packets."],
+      "answer": "c. Use the route command to add routes to the networks that aren't receiving replies.",
+      "type": "single",
+      "explanation": "Using 'route' to add specific paths ensures packets leave through the correct network interface. Adding multiple gateways or changing them disrupts other paths, and hardware replacement won't fix a path issue."
+    },
+    {
+      "question": "You have just changed the IP address from 172.31.1.10/24 to 172.31.1.110/24 on a computer named 'Computer1' in your domain. You were communicating successfully with this computer from your workstation before you changed the address. Now when you try the command ping Computer1 from your workstation, you don't get a successful reply. Other computers on the network aren't having a problem communicating with the computer. Which command might help solve the problem?",
+      "options": ["a. arp -d", "b. ipconfig /flushdns", "c. tracert Computer1", "d. ping -6 172.31.1.110"],
+      "answer": "a. arp -d",
+      "type": "single",
+      "explanation": "'arp -d' clears the address cache the workstation uses to find Computer1 by its new IP. Flushing DNS, tracing routes, or using IPv6 aren't related to fixing this IP-to-hardware link."
+    },
+    {
+      "question": "Which address can't be assigned to a host computer?",
+      "options": ["a. 10.100.44.16/24", "b. 172.16.7.255/22", "c. 192.168.100.66/26", "d. 172.29.132.0/18"],
+      "answer": "b. 172.16.7.255/22",
+      "type": "single",
+      "explanation": "This address is a broadcast address for its subnet, basically a megaphone to all nearby devices, so it can't be assigned to one device. A, C, and D are valid within their subnets but with D being a network identifier."
+    },
+    {
+      "question": "Which IPv6 transition technology can be used with NAT routers and has the address prefix 2001::/32?",
+      "options": ["a. Teredo", "b. ISATAP", "c. 6to4", "d. IPv6-over-IPv4"],
+      "answer": "c. 6to4",
+      "type": "single",
+      "explanation": "6to4 creates IPv6 paths using IPv4, with all the 2001::/32 prefix. Teredo is for making IPv6 connections when NAT is in the way, ISATAP tunnels within local networks, and IPv6-over-IPv4 is a broader method of connection."
+    },
+    {
+      "question": "How many bits are in the interface ID of an IPv6 address?",
+      "options": ["a. 32", "b. 64", "c. 16", "d. 48"],
+      "answer": "b. 64",
+      "type": "single",
+      "explanation": "IPv6 splits addresses into two equal parts: 64 bits for the network and 64 bits for the interface ID, making sure all devices have enough unique space. Option 32 would be half of IPv6, and 16 or 48 don't fit the structure."
+    },
+    {
+      "question": "What address should you ping if you want to test local IPv6 operation but don't want to actually send any packets on the network?",
+      "options": ["a. 1::f", "b. 2001:::db8", "c. fe80::ffff", "d. ::1"],
+      "answer": "d. ::1",
+      "type": "single",
+      "explanation": "::1 is the special loopback address for IPv6, just like 127.0.0.1 for IPv4, to test things locally. The other options are either general addresses or misconfigured."
+    }
+  ]

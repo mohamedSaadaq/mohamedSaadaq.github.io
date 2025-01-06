@@ -1,0 +1,287 @@
+[
+    {
+        "question": "Which component allows computers to connect to a network and communicate over network media?",
+        "options": ["a. Network Interface Card (NIC)", "b. Router", "c. Modem", "d. Firewall"],
+        "answer": "a. Network Interface Card (NIC)",
+        "type": "single",
+        "explanation": "A Network Interface Card (NIC) is a hardware component that enables a computer to connect to a network and communicate. It can do so using copper cables or fiber optics. Routers direct traffic between networks, modems connect to the internet, and firewalls protect against unauthorized access."
+      },
+      {
+        "question": "What is the primary function of a network switch?",
+        "options": ["a. Amplifying signals", "b. Directing data to the intended device", "c. Connecting to the internet", "d. Filtering unwanted content"],
+        "answer": "b. Directing data to the intended device",
+        "type": "single",
+        "explanation": "A network switch connects devices in a network and directs data only to the intended device by recognizing MAC addresses. Amplifiers boost signal strength, modems connect to the internet, and filters block unwanted content."
+      },
+      {
+        "question": "In an office cabling system, what connects the wall port to the network switch?",
+        "options": ["a. Patch panel", "b. NIC", "c. Router", "d. Modem"],
+        "answer": "a. Patch panel",
+        "type": "single",
+        "explanation": "A patch panel connects individual wall ports to the network switch using patch cords. The NIC is within computers, routers direct network traffic, and modems handle internet connections."
+      },
+      {
+        "question": "In a real-world scenario, why might you prefer using a managed switch over an unmanaged one?",
+        "options": [
+          "a. For simple plug-and-play use",
+          "b. To control network access and secure connections",
+          "c. To connect home devices like TVs and consoles",
+          "d. To lower electricity bills"
+        ],
+        "answer": "b. To control network access and secure connections",
+        "type": "single",
+        "explanation": "A managed switch allows you to adjust network settings, enhance security, and efficiently manage traffic, ideal for businesses. An unmanaged switch is for basic use, such as connecting simple home devices."
+      },
+      {
+        "question": "Which of the following is true about MAC addresses?",
+        "options": [
+          "a. MAC addresses are dynamic and change often.",
+          "b. MAC addresses are 48 bits long and typically shown in hexadecimal.",
+          "c. MAC addresses are assigned by internet service providers.",
+          "d. MAC addresses determine network speed."
+        ],
+        "answer": "b. MAC addresses are 48 bits long and typically shown in hexadecimal.",
+        "type": "single",
+        "explanation": "MAC addresses, used to identify devices on a network, are 48 bits long and often written in hexadecimal format like 00:1A:2B:3C:4D:5E. They are static, not assigned by ISPs, and don't decide network speed."
+      },
+      {
+        "question": "Why are hubs less efficient in modern networks?",
+        "options": [
+          "a. They require more power than switches.",
+          "b. They do not support modern security protocols.",
+          "c. They create collision domains, which reduce performance.",
+          "d. They are more expensive than switches."
+        ],
+        "answer": "c. They create collision domains, which reduce performance.",
+        "type": "single",
+        "explanation": "Hubs send data to all connected devices, causing data collisions and reducing network speed. Switches, which direct data only to intended devices, are preferred in modern networks. Hubs aren't necessarily more power-demanding, they can support some security protocols, and are often cheaper than switches."
+      },
+      {
+        "question": "In what situation might you see hubs still being used?",
+        "scenario": "An organization requires connectivity for very old hardware that does not support modern Ethernet standards.",
+        "options": [
+          "a. In new office buildings with state-of-the-art technology",
+          "b. In legacy systems needing compatibility with older devices",
+          "c. In environments with high-security needs",
+          "d. In places where high-speed internet is required"
+        ],
+        "answer": "b. In legacy systems needing compatibility with older devices",
+        "type": "single",
+        "explanation": "Hubs might be utilized for legacy systems where compatibility with older devices is necessary, as these older devices might not support newer technologies such as modern switches."
+      },
+      {
+        "question": "What capability does Power over Ethernet (PoE) provide that is beneficial for managing network devices?",
+        "options": [
+          "a. Provides broadband internet remote management",
+          "b. Supplies power and data through a single network cable",
+          "c. Reduces data packet loss and increases speed",
+          "d. Enhances wireless connectivity range"
+        ],
+        "answer": "b. Supplies power and data through a single network cable",
+        "type": "single",
+        "explanation": "PoE allows a single Ethernet cable to deliver both data and electric power to devices like cameras and access points, simplifying installations. It doesn't directly improve packet speed, internet access, or wireless range."
+      },
+      {
+        "question": "Which IEEE standard allows for the highest power delivery in PoE implementations?",
+        "options": ["a. 802.3af", "b. 802.3at", "c. 802.3bt", "d. 802.11ac"],
+        "answer": "c. 802.3bt",
+        "type": "single",
+        "explanation": "IEEE 802.3bt, known as PoE++, provides the highest power delivery up to 73W. 802.3af delivers up to 13W, 802.3at (PoE+) provides up to 25W. 802.11ac is related to Wi-Fi, not PoE."
+      },
+      {
+        "question": "What scenario might require the use of a power injector for PoE devices?",
+        "scenario": "An office wants to install PoE cameras, but their current network switch does not support PoE.",
+        "options": [
+          "a. When the network switch is already PoE-enabled",
+          "b. When devices require more power than the switch can provide",
+          "c. When the switch cannot supply PoE",
+          "d. When implementing wireless technology"
+        ],
+        "answer": "c. When the switch cannot supply PoE",
+        "type": "single",
+        "explanation": "A power injector adds PoE capability by inserting power into the Ethernet line for devices when the switch itself does not support PoE, eliminating the need for separate power cables."
+      },
+      {
+        "question": "How does a patch panel contribute to easier network management in offices?",
+        "options": [
+          "a. By boosting network signals",
+          "b. By organizing and labeling cable connections",
+          "c. By directly connecting computers to the network",
+          "d. By increasing network speed"
+        ],
+        "answer": "b. By organizing and labeling cable connections",
+        "type": "single",
+        "explanation": "Patch panels serve as a centralized location for organizing cables, making it easier to manage and change connections. They don’t boost signals, directly connect devices, or increase speed."
+      },
+      {
+        "question": "Why might a network technician bond multiple NIC ports together in a server?",
+        "scenario": "An organization needs increased data throughput and redundancy for their server handling critical operations.",
+        "options": [
+          "a. To decrease power consumption",
+          "b. To increase bandwidth and provide redundancy",
+          "c. To reduce the number of cables",
+          "d. To simplify network configuration"
+        ],
+        "answer": "b. To increase bandwidth and provide redundancy",
+        "type": "single",
+        "explanation": "Bonding multiple NIC ports increases the total data capacity (bandwidth) and provides redundancy, so if one port fails, the others can continue to operate. This doesn’t decrease cables or simplify settings but can enhance both performance and reliability."
+      },
+      {
+        "question": "Which of the following statements correctly describes the advantages of using Ethernet switches over hubs?",
+        "options": [
+          "a. Switches create large collision domains.",
+          "b. Switches have higher data transfer rates due to full-duplex mode.",
+          "c. Switches require more maintenance than hubs.",
+          "d. Switches amplify signals more than hubs."
+        ],
+        "answer": "b. Switches have higher data transfer rates due to full-duplex mode.",
+        "type": "single",
+        "explanation": "Switches support full-duplex mode, allowing data to be sent and received simultaneously, which increases data transfer rates. They segment collision domains (meaning smaller collision zones, not larger), and don't require more maintenance inherently. Though they don't amplify signals like hubs, they are more efficient at routing data."
+      },
+      {
+        "question": "Which real-world setup scenario would most likely use a modular switch?",
+        "scenario": "A large organization needs to manage hundreds of network connections efficiently from a single control point.",
+        "options": [
+          "a. Small home office with limited devices",
+          "b. Medium enterprise with simple setups",
+          "c. Data center needing scalable and efficient management",
+          "d. Remote outpost with few network demands"
+        ],
+        "answer": "c. Data center needing scalable and efficient management",
+        "type": "single",
+        "explanation": "A modular switch can handle a large number of connections through a compact setup, ideal for data centers requiring high performance and flexibility. It's overkill for small setups or remote locations with limited needs."
+      },
+      {
+        "question": "What role do NICs (Network Interface Cards) play in connecting a computer to a network?",
+        "options": [
+          "a. They act as firewalls to protect the network.",
+          "b. They convert data into signals for network transmission.",
+          "c. They direct internet traffic across different networks.",
+          "d. They amplify Wi-Fi signals for better coverage."
+        ],
+        "answer": "b. They convert data into signals for network transmission.",
+        "type": "single",
+        "explanation": "NICs convert the data from a computer into electronic signals or light pulses, allowing it to be transmitted over a network. They don't act as firewalls, direct internet traffic, or amplify Wi-Fi signals; they are the link between the computer and the network."
+      },
+      {
+        "question": "What is the significance of a MAC address in networking?",
+        "options": [
+          "a. It identifies the network location of a device.",
+          "b. It specifies the internet protocol version used.",
+          "c. It uniquely identifies a device's network interface.",
+          "d. It determines the physical location of a device."
+        ],
+        "answer": "c. It uniquely identifies a device's network interface.",
+        "type": "single",
+        "explanation": "A MAC address is a unique identifier assigned to a network interface for communications on the local network segment. It doesn't specify IP versions or physical locations."
+      },
+      {
+        "question": "How does bonding multiple network ports on a NIC enhance performance? (Choose all that apply.)",
+        "options": [
+          "a. Increases total bandwidth",
+          "b. Provides fault tolerance",
+          "c. Simplifies network configurations",
+          "d. Increases network distance"
+        ],
+        "answer": ["a. Increases total bandwidth", "b. Provides fault tolerance"],
+        "type": "multiple",
+        "explanation": "Bonding increases total bandwidth by using multiple cables to carry data and provides redundancy to keep the network up if one link fails. It doesn't simplify configurations or extend network distance."
+      },
+      {
+        "question": "Real-World Scenario: A new office requires 50 workstations to be connected to the network, but budget constraints mean they must use existing network hardware, mainly hubs. What are the potential drawbacks?",
+        "options": [
+          "a. Increased network speed",
+          "b. Greater security",
+          "c. Higher collision rate, reducing network efficiency",
+          "d. Enhanced signal amplification"
+        ],
+        "answer": "c. Higher collision rate, reducing network efficiency",
+        "type": "single",
+        "explanation": "Hubs broadcast data to all ports, leading to more collisions when multiple users send data simultaneously, severely impacting network efficiency. Hubs do not increase speed or security, nor do they amplify signals."
+      },
+      {
+        "question": "What is the function of insulation displacement connectors (IDC) in a patch panel setup?",
+        "options": [
+          "a. To amplify signals",
+          "b. To provide power",
+          "c. To terminate individual wires securely",
+          "d. To filter data traffic"
+        ],
+        "answer": "c. To terminate individual wires securely",
+        "type": "single",
+        "explanation": "IDC connectors are used to securely attach each individual wire of a network cable into a patch panel, ensuring a reliable and organized network cabling system. They don't amplify signals, provide power, or filter traffic."
+      },
+      {
+        "question": "Why is Power over Ethernet (PoE) a popular choice for wireless access point installations?",
+        "options": [
+          "a. Eliminates the need for power cables",
+          "b. Increases wireless signal strength",
+          "c. Reduces installation cost significantly",
+          "d. Provides unlimited power to devices"
+        ],
+        "answer": "a. Eliminates the need for power cables",
+        "type": "single",
+        "explanation": "PoE delivers power over the same cable that transmits data, simplifying the installation of devices like wireless access points by removing the need for separate power supplies. It doesn't increase signal strength, drastically reduce costs alone, or provide unlimited power."
+      },
+      {
+        "question": "What is a 'collision domain,' and how do switches improve upon the limitations seen with hubs?",
+        "options": [
+          "a. A network area where repeated signals amplify",
+          "b. A section of a network where data packets collide",
+          "c. A controlled segment for high secure data",
+          "d. A region where wireless network increases"
+        ],
+        "answer": "b. A section of a network where data packets collide",
+        "type": "single",
+        "explanation": "A collision domain is where network devices compete to use the same data channel, and data collisions can occur. Switches create separate collision domains for each connected device, reducing collisions and improving performance."
+      },
+      {
+        "question": "How do Ethernet switches manage traffic differently than hubs?",
+        "options": [
+          "a. By broadcasting data to all connected devices equally",
+          "b. By directing data only to specified MAC addresses",
+          "c. By amplifying data signals throughout the network",
+          "d. By encrypting all network traffic"
+        ],
+        "answer": "b. By directing data only to specified MAC addresses",
+        "type": "single",
+        "explanation": "Switches intelligently direct data packets only to the target device's port based on MAC addresses, unlike hubs which send data to all ports. They do not amplify signals or encrypt network traffic inherently."
+      },
+      {
+        "question": "Why might an IT manager choose to implement a VLAN on a managed switch?",
+        "options": [
+          "a. To eliminate all network collisions",
+          "b. To enhance network segment security and performance",
+          "c. To increase physical port availability",
+          "d. To enable wireless connectivity"
+        ],
+        "answer": "b. To enhance network segment security and performance",
+        "type": "single",
+        "explanation": "VLANs (Virtual Local Area Networks) allow you to create separate, isolated network segments, enhancing both security and network performance. They don't increase physical ports, eliminate all collisions automatically, or facilitate wireless connectivity."
+      },
+      {
+        "question": "In which of the following cases would you prefer using fiber optic cables over copper Ethernet cables?",
+        "options": [
+          "a. For short-distance connections in a small office",
+          "b. When requiring high-speed data over long distances",
+          "c. For simple home internet setups",
+          "d. When setting up a backup server in the same room"
+        ],
+        "answer": "b. When requiring high-speed data over long distances",
+        "type": "single",
+        "explanation": "Fiber optic cables are ideal for high-speed data transmission over long distances with minimal interference, unlike copper cables, which are better suited for less demanding setups like short connections or home use."
+      },
+      {
+        "question": "Imagine an organization wants to set up a high-density wireless network with numerous access points. Which technology should be considered to simplify installation?",
+        "scenario": "They need fast internet and power to be provided through the same cable.",
+        "options": [
+          "a. Regular Ethernet with separate power",
+          "b. Power over Ethernet (PoE)",
+          "c. Fiber optics with power adapters",
+          "d. Wireless extenders only"
+        ],
+        "answer": "b. Power over Ethernet (PoE)",
+        "type": "single",
+        "explanation": "Power over Ethernet (PoE) simplifies wireless access point installations by providing both data connectivity and power through a single Ethernet cable, reducing the complexity and cost of setup compared to needing separate solutions."
+      }
+  ]

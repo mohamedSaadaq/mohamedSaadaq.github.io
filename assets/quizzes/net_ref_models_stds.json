@@ -1,0 +1,149 @@
+[
+    {
+      "question": "Given the information about Ethernet versions and what you know of layered technologies, which of the following statements is true? (Choose all that apply.)",
+      "options": ["a. Ethernet works at the Data Link and Physical layers of the OSI model, and upgrades to newer, faster versions of Ethernet can be made by changing only the components that work at these layers.", "b. Ethernet spans several layers and requires a new protocol stack to upgrade to new versions.", "c. Changes in technology at one layer of the OSI model don't usually affect the operation of other layers.", "d. Ethernet isn't considered a scalable technology."],
+      "answer": ["a. Ethernet works at the Data Link and Physical layers of the OSI model", "c. Changes in technology at one layer of the OSI model don't usually affect the operation of other layers"],
+      "type": "multiple",
+      "explanation": "Ethernet operates at the lower two layers (Data Link and Physical) of the OSI model. This means when you upgrade Ethernet speeds—like going from 10 Mbps to 1 Gbps—you only need to change the hardware components, such as cables and network cards. Also, changes at one OSI layer, like upgrading Ethernet (which is at Layers 1 and 2), don't disrupt functions at other layers, such as Application or Transport. Ethernet is quite scalable, adapting from small to large networks efficiently, in contrast to option d."
+    },
+    {
+      "question": "The addition of information to a PDU as it's passed from one layer to the next is called which of the following?",
+      "options": ["a. PDI transforming", "b. Encapsulation", "c. Deencapsulation", "d. Converting"],
+      "answer": "b. Encapsulation",
+      "type": "single",
+      "explanation": "Encapsulation is when each layer of the OSI model adds its own information to the data as it goes down the layers to be sent over a network. For example, the Transport layer adds ports and sequence numbers, while the Network layer adds IP addresses. Deencapsulation, in contrast, is removing this information as data is received. Other terms like 'PDI transforming' don't apply here."
+    },
+    {
+      "question": "Layers acting as though they communicate directly with each other across the network are called which of the following?",
+      "options": ["a. Partners", "b. Synchronous", "c. Interchangeable", "d. Peers"],
+      "answer": "d. Peers",
+      "type": "single",
+      "explanation": "Peer layers are layers at the same level on different devices that communicate as if they are directly connected, even though data actually travels down and up through the OSI model layers. This 'peer' concept is a key feature enabling the OSI model to simplify complex networking into manageable tasks. 'Synchronous' is about timing, not peer communication."
+    },
+    {
+      "question": "Place the following letters in the correct order to represent the OSI model from Layer 7 to Layer 1:",
+      "options": ["a. Presentation", "b. Data Link", "c. Session", "d. Physical", "e. Application", "f. Transport", "g. Network"],
+      "answer": "e, a, c, f, g, b, d",
+      "type": "multiple",
+      "explanation": "The OSI model layers from top to bottom are: Application, Presentation, Session, Transport, Network, Data Link, and Physical. Each layer has specific roles, from interacting with software to managing data transport and physical transmissions."
+    },
+    {
+      "question": "Which OSI layer creates and processes frames?",
+      "options": ["a. Network (Layer 3)"],
+      "answer": "b. Data Link (Layer 2)",
+      "type": "single",
+      "explanation": "Frames are created at the Data Link layer, which packages raw bits from the Physical layer into structured units. This layer adds essential addressing data, like MAC addresses, enabling devices to identify data meant specifically for them. The Network layer focuses on packets, which are used for logical addressing and routing."
+    },
+    {
+      "question": "Which OSI layer handles flow control, data segmentation, and reliability?",
+      "options": ["a. Application", "b. Physical", "c. Transport", "d. Data Link"],
+      "answer": "c. Transport",
+      "type": "single",
+      "explanation": "The Transport layer ensures data is segmented for efficient management, controls the data flow rate to help the receiver manage incoming data without overload, and keeps data reliable through methods like acknowledgments and retries. While the Physical layer deals with raw bit transmission, the Data Link layer focuses on frames and basic error correction."
+    },
+    {
+      "question": "Which OSI layer governs how a NIC is attached to the network medium?",
+      "options": ["a. Physical (Layer 1)"],
+      "answer": "a. Physical (Layer 1)",
+      "type": "single",
+      "explanation": "The Physical layer deals with the hardware parts that connect to the network, like wires, connectors, and specific signals required to perform bit transmissions. At this level, specifics like types of cable and connectors are defined. The Data Link, in contrast, controls logical link control functions such as framing."
+    },
+    {
+      "question": "Which OSI layer determines the route a packet takes from sender to receiver?",
+      "options": ["a. 7", "b. 1", "c. 3", "d. 4"],
+      "answer": "c. 3 (Network layer)",
+      "type": "single",
+      "explanation": "The Network layer is responsible for deciding the path packets take through the network using logical addressing and route-finding protocols like BGP or OSPF. Here, IP addresses define where packets go. Other layers, such as Layer 4 (Transport), handle data integrity and flow, not routing."
+    },
+    {
+      "question": "Which OSI layer is responsible for setting up, maintaining, and ending ongoing information exchanges across a network?",
+      "options": ["a. 6", "b. 3", "c. 2", "d. 5"],
+      "answer": "d. 5 (Session layer)",
+      "type": "single",
+      "explanation": "The Session layer manages sessions between networked devices, looking after the start, maintenance, and end of data exchanges. This layer helps ensure communications can be established and ended cleanly. The Network layer focuses on packet routing, and the Presentation layer concerns data translation."
+    },
+    {
+      "question": "Which of the following elements might the Data Link layer add to its PDU? (Choose all that apply.)",
+      "options": ["a. Physical addresses", "b. Logical addresses", "c. Data", "d. CRC"],
+      "answer": ["a. Physical addresses", "d. CRC"],
+      "type": "multiple",
+      "explanation": "In the Data Link frame, physical (MAC) addresses identify devices on a network, while the CRC helps detect transmission errors. The Network layer uses logical addresses like IPs, and while data is part of the frame, it comes from higher layers."
+    },
+    {
+      "question": "When and how many times is a CRC calculated?",
+      "options": ["a. Once, before transmission", "b. Once, after receipt", "c. Twice, once before transmission and again on receipt", "d. At the source and destination and at each intermediary device"],
+      "answer": "c. Twice, once before transmission and again on receipt",
+      "type": "single",
+      "explanation": "The CRC (Cyclic Redundancy Check) helps ensure data integrity. It is calculated by the sender and included in the frame; the receiver recalculates it to check for errors. Intermediary devices like switches do not alter the CRC."
+    },
+    {
+      "question": "Which layer of the OSI model does Project 802 divide into two sublayers?",
+      "options": ["a. Physical", "b. Data Link", "c. Network", "d. Session"],
+      "answer": "b. Data Link",
+      "type": "single",
+      "explanation": "Project 802 divides the Data Link layer into the Logical Link Control (LLC) for error handling and the Media Access Control (MAC) for physical addressing. The Physical layer focuses on media transmission, not sublayer organization."
+    },
+    {
+      "question": "What are the names of the sublayers specified as part of Project 802? (Choose all that apply.)",
+      "options": ["a. Data Link Control (DLC)", "b. Logical Link Control (LLC)", "c. Carrier Sense Multiple Access/Collision Detection (CSMA/CD)", "d. Media Access Control (MAC)"],
+      "answer": ["b. Logical Link Control (LLC)", "d. Media Access Control (MAC)"],
+      "type": "multiple",
+      "explanation": "LLC oversees communication with higher layers and error control, while MAC handles access to physical media and uses MAC addresses for device identification. CSMA/CD is an access method within MAC, not a sublayer."
+    },
+    {
+      "question": "Which term refers to stripping header information as a PDU is passed from one layer to a higher layer?",
+      "options": ["a. Deencapsulation", "b. Encapsulation", "c. PDU stripping", "d. Packetization"],
+      "answer": "a. Deencapsulation",
+      "type": "single",
+      "explanation": "Deencapsulation involves removing headers and trailers as data travels up OSI layers on the receiving end, ensuring that the data can be used by the application. Encapsulation, in R, adds these headers and trailers."
+    },
+    {
+      "question": "Which IEEE 802 standard applies to Ethernet?",
+      "options": ["a. 802.2", "b. 802.3", "c. 802.4", "d. 802.5", "e. 802.11"],
+      "answer": "b. 802.3",
+      "type": "single",
+      "explanation": "IEEE 802.3 covers Ethernet standards, describing wired connections and how data is framed and accessed. While 802.2 defines LLC, IEEE 802.11 refers to wireless networks (Wi-Fi)."
+    },
+    {
+      "question": "Which IEEE 802 standard applies to wireless LANs?",
+      "options": ["a. 802.2", "b. 802.3", "c. 802.4", "d. 802.5", "e. 802.11"],
+      "answer": "e. 802.11",
+      "type": "single",
+      "explanation": "IEEE 802.11 specifies wireless LAN technology (Wi-Fi), outlining how devices communicate via radio waves. The other standards like 802.3 deal with wired networks."
+    },
+    {
+      "question": "What's the name of the PDU at the Transport layer?",
+      "options": ["a. Bit", "b. Packet", "c. Segment", "d. Data"],
+      "answer": "c. Segment",
+      "type": "single",
+      "explanation": "At the Transport layer, the PDU is a segment, essential for managing sequence and acknowledgment numbers, ensuring data transmissions are properly ordered and acknowledged. Packets belong to the Network layer."
+    },
+    {
+      "question": "At which OSI layer does the PDU contain sequence and acknowledgment numbers?",
+      "options": ["a. Application", "b. 4", "c. Data Link", "d. 6"],
+      "answer": "b. 4 (Transport layer)",
+      "type": "single",
+      "explanation": "The Transport layer manages reliable data transfer, using sequence and acknowledgment numbers in segments to make sure data arrives correctly from sender to receiver."
+    },
+    {
+      "question": "Which of the following is an example of software found at the Application layer? (Choose all that apply.)",
+      "options": ["a. FTP", "b. TCP", "c. HTTP", "d. ICMP"],
+      "answer": ["a. FTP", "c. HTTP"],
+      "type": "multiple",
+      "explanation": "The Application layer supports end-user communication and interaction through protocols like FTP (for file transfers) and HTTP (for web browsing). TCP is a Transport layer protocol, while ICMP is at the Network layer."
+    },
+    {
+      "question": "At which Data Link sublayer does the physical address reside?",
+      "options": ["a. Media Access Control (MAC)", "b. Logical Link Control (LLC)", "c. Data Access Control (DAC)", "d. Network Access Control (NAC)"],
+      "answer": "a. Media Access Control (MAC)",
+      "type": "single",
+      "explanation": "The MAC sublayer manages physical addresses or MAC addresses, crucial for local network communications. The LLC sublayer is more about logical link control."
+    },
+    {
+      "question": "Which of the following problems can occur at the Physical layer?",
+      "options": ["a. NIC driver problems", "b. Incorrect IP addresses", "c. Signal errors caused by noise", "d. Incorrect segment size"],
+      "answer": "c. Signal errors caused by noise",
+      "type": "single",
+      "explanation": "The Physical layer is all about transmitting raw bits over media, making it susceptible to signal distortions due to noise and interference, affecting data integrity. Driver problems occur higher, at or above the Data Link."
+    }
+  ]
