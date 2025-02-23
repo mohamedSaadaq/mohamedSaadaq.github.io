@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CompTIA A+ Core 1 – 5.0 – Hardware and Network Troubleshooting</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-home"></i> Core 1 – 5.0 – Hardware & Network Troubleshooting
+            </a>
+        </div>
+    </nav>
+    <div class="main-container">
+        <div class="sidebar">
+            <h5>Hardware & Network Troubleshooting</h5>
+            <div class="accordion" id="hardwareTroubleshootingAccordion">
+                <div class="accordion-item border-0">
+                    <h2 class="accordion-header" id="htHeadingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#htCollapseOne" aria-expanded="false" aria-controls="htCollapseOne">
+                            Chapter 1: Hardware Troubleshooting
+                        </button>
+                    </h2>
+                    <div id="htCollapseOne" class="accordion-collapse collapse" aria-labelledby="htHeadingOne"
+                        data-bs-parent="#hardwareTroubleshootingAccordion">
+                        <div class="accordion-body">
+                            <a href="#" data-key="ht-basics">Basics & Tools</a>
+                            <a href="#" data-key="ht-diagnostics">Diagnostics & Repair</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item border-0">
+                    <h2 class="accordion-header" id="htHeadingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#htCollapseTwo" aria-expanded="false" aria-controls="htCollapseTwo">
+                            Chapter 2: Network Troubleshooting
+                        </button>
+                    </h2>
+                    <div id="htCollapseTwo" class="accordion-collapse collapse" aria-labelledby="htHeadingTwo"
+                        data-bs-parent="#hardwareTroubleshootingAccordion">
+                        <div class="accordion-body">
+                            <a href="#" data-key="nt-basics">Network Basics</a>
+                            <a href="#" data-key="nt-issues">Common Issues</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-area" id="outlineContentPlaceholder">
+            <a href="index.html" class="btn btn-outline-light back-btn">
+                <i class="fas fa-arrow-left"></i> Back to Catalog
+            </a>
+            <h2>CompTIA A+ Core 1 – 5.0 – Hardware & Network Troubleshooting</h2>
+            <p>Select a chapter on the left to view details here.</p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+    <script>
+        const subChapterData = {
+            'ht-basics': {
+                title: 'Basics & Tools',
+                text: 'Overview of hardware troubleshooting tools and basic procedures.'
+            },
+            'ht-diagnostics': {
+                title: 'Diagnostics & Repair',
+                text: 'Step-by-step troubleshooting and repair techniques for hardware issues.'
+            },
+            'nt-basics': {
+                title: 'Network Basics',
+                text: 'Introduction to network troubleshooting, including cables and connections.'
+            },
+            'nt-issues': {
+                title: 'Common Issues',
+                text: 'Common network problems and methods to diagnose them.'
+            }
+        };
+        document.addEventListener('DOMContentLoaded', () => {
+            initOutline(subChapterData);
+        });
+    </script>
+</body>
+
+</html>
