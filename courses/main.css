@@ -1,0 +1,586 @@
+/* -----------------------------------------------------
+   1) Base & Layout
+   ----------------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    /* Light background by default, but we often force .dark in JS or HTML. */
+    background-color: #f3f6f9;
+    color: #333;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Toast container might be absolutely positioned (in JS) */
+/* .toast { min-width: 250px; } - We'll define below. */
+
+/* -----------------------------------------------------
+     2) Main Site Sidebar (Home, Favorites, etc.)
+     ----------------------------------------------------- */
+.sidebar {
+    width: 260px;
+    background-color: #fff;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #ddd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 2000;
+    transition: width 0.3s ease;
+    overflow: hidden;
+}
+
+.sidebar.collapsed {
+    width: 80px;
+}
+
+.sidebar-brand {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+
+.btn-toggle {
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-right: 0.75rem;
+    transition: transform 0.3s;
+}
+
+.brand-icon {
+    font-size: 1.4rem;
+    margin-right: 0.75rem;
+    color: #000;
+}
+
+.sidebar-brand-text {
+    font-weight: 600;
+    margin-right: auto;
+    transition: opacity 0.3s ease;
+}
+
+.sidebar.collapsed .sidebar-brand-text {
+    opacity: 0;
+}
+
+.dark-mode-toggle {
+    display: flex;
+    align-items: center;
+}
+
+.dark-mode-toggle input[type="checkbox"] {
+    display: none;
+}
+
+.toggle-label {
+    width: 40px;
+    height: 20px;
+    background: #ccc;
+    border-radius: 999px;
+    position: relative;
+    cursor: pointer;
+}
+
+.toggle-label::after {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    transition: 0.2s;
+}
+
+.dark-mode-toggle input[type="checkbox"]:checked+.toggle-label {
+    background: #ff6f3c;
+}
+
+.dark-mode-toggle input[type="checkbox"]:checked+.toggle-label::after {
+    transform: translateX(20px);
+}
+
+.sidebar-section {
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.menu-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-list li {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-list li a {
+    color: inherit;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 0.5rem 0.75rem;
+    transition: background 0.2s;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+}
+
+.menu-list li a:hover {
+    background-color: #ff6f3c22;
+}
+
+.menu-list li a i {
+    margin-right: 0.5rem;
+    font-size: 1rem;
+}
+
+.sidebar.collapsed .menu-list li a span {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Responsive: small screens => top bar */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .sidebar.collapsed {
+        height: 80px;
+        width: 100%;
+    }
+
+    .sidebar-brand {
+        border-bottom: none;
+        flex: 1;
+        justify-content: flex-start;
+    }
+
+    .sidebar-section {
+        border-bottom: none;
+        padding: 0.5rem;
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu-list {
+        flex-direction: row;
+    }
+
+    .menu-list li {
+        margin-right: 0.75rem;
+        margin-bottom: 0;
+    }
+
+    .menu-list li a {
+        padding: 0.3rem 0.5rem;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .main-content {
+        margin-left: 0;
+        margin-top: 80px;
+    }
+}
+
+/* -----------------------------------------------------
+     3) Main Content (Home, Favorites, etc.)
+     ----------------------------------------------------- */
+.main-content {
+    flex: 1;
+    margin-left: 260px;
+    transition: margin-left 0.3s ease;
+    overflow-y: auto;
+}
+
+.sidebar.collapsed+.main-content {
+    margin-left: 80px;
+}
+
+/* -----------------------------------------------------
+     4) Filter Bar & Course Tiles (on Home)
+     ----------------------------------------------------- */
+.search-bar {
+    background-color: #e2e8ee;
+    border: none;
+    color: #333;
+    padding: 0.5rem;
+    transition: background 0.2s;
+}
+
+.search-bar:focus {
+    outline: none;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+    background-color: #dce3ea;
+}
+
+#clearSearch {
+    background: none;
+    border: none;
+    color: #666;
+    cursor: pointer;
+}
+
+.form-select {
+    background-color: #e2e8ee;
+    border: none;
+    color: #333;
+    padding: 0.5rem;
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.icon-button:hover {
+    color: #555;
+}
+
+#courseTiles {
+    padding: 1rem;
+}
+
+/* -----------------------------------------------------
+     5) Cards (Home, Favorites, My Learning, etc.)
+     ----------------------------------------------------- */
+.card.grid-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: #333;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card.grid-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card.grid-card .card-img-top {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card.grid-card .card-body {
+    padding: 1rem;
+}
+
+.badge-core1 {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    margin-right: 0.5rem;
+}
+
+.badge-core2 {
+    background-color: #28a745;
+    color: #fff;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    margin-right: 0.5rem;
+}
+
+.badge-networkplus {
+    background-color: #9c27b0;
+    color: #fff;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    margin-right: 0.5rem;
+}
+
+.list-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: #333;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.list-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.list-card .img-left {
+    object-fit: cover;
+    height: 100%;
+}
+
+.card-title {
+    margin-top: 0.5rem;
+}
+
+.btn-outline-light {
+    border: 1px solid #ccc;
+    color: #333;
+    margin-top: 0.5rem;
+}
+
+.btn-outline-light:hover {
+    background-color: #ff6f3c;
+    color: #fff;
+}
+
+/* -----------------------------------------------------
+     6) Toast (for add/remove Favorites, etc.)
+     ----------------------------------------------------- */
+.toast {
+    min-width: 250px;
+}
+
+/* -----------------------------------------------------
+     7) Dark Mode
+     ----------------------------------------------------- */
+body.dark {
+    background-color: #1e2a38;
+    color: #f8f9fa;
+}
+
+/* The main site sidebar in dark mode */
+body.dark .sidebar {
+    background-color: #1e2a38;
+    color: #f8f9fa;
+    border-right: 1px solid #344658;
+}
+
+body.dark .sidebar-brand,
+body.dark .sidebar-section {
+    border-bottom: 1px solid #344658;
+}
+
+body.dark .btn-toggle {
+    color: #f8f9fa;
+}
+
+body.dark .brand-icon {
+    color: #f8f9fa;
+}
+
+body.dark .menu-list li a {
+    color: #f8f9fa;
+}
+
+body.dark .menu-list li a:hover {
+    background-color: #344658;
+}
+
+body.dark .main-content {
+    background-color: #1e2a38;
+    color: #f8f9fa;
+}
+
+body.dark #homePage,
+body.dark #favoritesPage,
+body.dark #learningPage,
+body.dark #activityPage,
+body.dark #calendarPage {
+    background-color: #1e2a38;
+    color: #f8f9fa;
+}
+
+body.dark .search-bar {
+    background-color: #344658;
+    color: #ccc;
+}
+
+body.dark .search-bar::placeholder {
+    color: #fff;
+}
+
+body.dark .search-bar:focus {
+    background-color: #3e5161;
+}
+
+body.dark .form-select {
+    background-color: #344658;
+    color: #f8f9fa;
+}
+
+body.dark .icon-button {
+    color: #f8f9fa;
+}
+
+body.dark .card.grid-card,
+body.dark .card.list-card {
+    background-color: #2b3a4a;
+    border: none;
+    color: #fff;
+}
+
+body.dark .card.grid-card:hover,
+body.dark .card.list-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+body.dark .btn-outline-light {
+    border-color: #ccc;
+    color: #f8f9fa;
+}
+
+body.dark .btn-outline-light:hover {
+    background-color: #fff;
+    color: #2b3a4a;
+}
+
+body.dark .badge-core1 {
+    background-color: #007bff;
+}
+
+body.dark .badge-core2 {
+    background-color: #28a745;
+}
+
+body.dark .badge-networkplus {
+    background-color: #9c27b0;
+}
+
+/* -----------------------------------------------------
+     8) Notes Page (dark mode + removing white background)
+     ----------------------------------------------------- */
+body.dark .notes-form-card,
+body.dark .notes-card {
+    background-color: #2b3a4a !important;
+    color: #f8f9fa !important;
+    border: none !important;
+}
+
+body.dark .card-header {
+    background-color: #2b3a4a !important;
+    color: #fff !important;
+}
+
+/* -----------------------------------------------------
+     9) Outline Page (Hardware Outline) 
+     ----------------------------------------------------- */
+/* Container for the entire outline page (navbar is separate) */
+.outline-container {
+    display: flex;
+    height: calc(100vh - 56px);
+    /* subtract navbar height */
+    overflow: hidden;
+}
+
+/* Outline sidebar for the hardware outline */
+.outline-sidebar {
+    width: 280px;
+    min-width: 240px;
+    background-color: #2b3a4a;
+    border-right: 1px solid #344658;
+    overflow-y: auto;
+    padding: 1rem;
+}
+
+/* Outline content area */
+.outline-content {
+    flex: 1;
+    background-color: #1e2a38;
+    color: #f8f9fa;
+    overflow-y: auto;
+    padding: 1.5rem;
+}
+
+/* Outline sidebar heading */
+.outline-sidebar h5 {
+    color: #f8f9fa;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #344658;
+    padding-bottom: 0.5rem;
+}
+
+/* Accordion styling in the outline sidebar */
+.outline-sidebar .accordion-item {
+    background-color: transparent;
+    border: none;
+}
+
+.outline-sidebar .accordion-button {
+    background-color: #344658;
+    color: #fff;
+    border: none;
+}
+
+.outline-sidebar .accordion-button.collapsed {
+    background-color: #2b3a4a;
+    color: #fff;
+}
+
+.outline-sidebar .accordion-body {
+    background-color: #2b3a4a;
+    color: #ccc;
+    padding-left: 1rem;
+}
+
+.outline-sidebar .accordion-body a {
+    display: block;
+    color: #ccc;
+    text-decoration: none;
+    margin: 0.3rem 0;
+    border-radius: 4px;
+    padding: 0.3rem 0.5rem;
+    transition: background 0.2s;
+}
+
+.outline-sidebar .accordion-body a:hover {
+    background-color: #344658;
+    color: #fff;
+}
+
+/* Outline content text */
+.outline-content h2 {
+    margin-top: 0;
+    font-weight: 600;
+}
+
+.outline-content p {
+    color: #ddd;
+}
+
+.back-btn {
+    margin-bottom: 1rem;
+    border-color: #ccc;
+    color: #f8f9fa;
+}
+
+.back-btn:hover {
+    background-color: #fff;
+    color: #2b3a4a;
+}

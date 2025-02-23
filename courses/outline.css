@@ -1,0 +1,572 @@
+/* Basic Reset / Body */
+body {
+    /* (CHANGED) Use Bai Jamjuree Regular */
+    /* font-family: 'Bai Jamjuree', sans-serif; */
+    font-family: 'Nunito', sans-serif;
+    background-color: #1A1A1A;
+    color: #f8f9fa;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Light Mode: Body Overrides */
+body.light-mode {
+    background-color: #f8f9fa;
+    color: #1A1A1A;
+}
+
+/* -------------------------------------
+   TOP NAVIGATION
+------------------------------------- */
+.top-nav {
+    background-color: #26282E;
+    border-bottom: 1px solid #2a3948;
+    padding: 0.75rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.top-nav-left h4 {
+    margin: 0;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Toggle buttons (icon-only) */
+.top-nav .toggle-btn {
+    background: none;
+    border: none;
+    color: #f8f9fa;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.top-nav .toggle-btn:hover {
+    opacity: 0.8;
+}
+
+/* Light Mode: Top Navigation Overrides */
+body.light-mode .top-nav {
+    background-color: #E0E0E0;
+    border-bottom: 1px solid #D6D6D6;
+}
+
+body.light-mode .top-nav .toggle-btn {
+    color: #1A1A1A;
+}
+
+/* 
+   Back to Catalog button: 
+   Use 'btn-outline-light' in Dark Mode,
+   Force it to appear dark in Light Mode 
+*/
+body.light-mode a.btn.btn-outline-light {
+    background-color: #333 !important;
+    color: #fff !important;
+    border-color: #333 !important;
+}
+
+/* -------------------------------------
+   MAIN CONTAINER (Left Sidebar, Center, Right Sidebar)
+------------------------------------- */
+.main-container {
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+    /* prevent horizontal scroll if sidebars get big */
+}
+
+/* -------------------------------------
+   LEFT SIDEBAR
+------------------------------------- */
+.left-sidebar {
+    width: 280px;
+    min-width: 180px;
+    /* user can shrink it but not below 180px */
+    max-width: 50vw;
+    /* user can’t resize beyond half the screen */
+    border-right: 1px solid #2a3948;
+    background-color: #26282E;
+    overflow: auto;
+    resize: horizontal;
+    /* allow horizontal resizing */
+    transition: width 0.3s ease;
+    position: relative;
+    /* (for handle) */
+}
+
+.left-sidebar.collapsed {
+    width: 0 !important;
+    min-width: 0 !important;
+    overflow: hidden !important;
+    border: none !important;
+    resize: none !important;
+    /* no resizing when collapsed */
+}
+
+.left-sidebar h5 {
+    text-align: center;
+    /* Center the "Hardware Modules" heading */
+    font-weight: bold;
+    /* Make it bold */
+    font-size: 1rem;
+    margin: 1rem 0.5rem;
+}
+
+/* Light Mode: Left Sidebar Overrides */
+body.light-mode .left-sidebar {
+    background-color: #F0F0F0;
+    border-right: 1px solid #D6D6D6;
+}
+
+/* -------------------------------------
+   ACCORDION STYLING
+------------------------------------- */
+.accordion {
+    margin-right: 6px;
+    /* Shift so vertical line isn't on top of text */
+}
+
+/* Dark Mode: Lighter background for modules */
+.accordion-button {
+    background-color: #3A3D44;
+    /* Lighter than #26282E */
+    color: #fff;
+    border: none;
+    border-radius: 0;
+}
+
+.accordion-button.collapsed {
+    background-color: #3A3D44;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-button::after {
+    filter: invert(1);
+    /* invert arrow color to white */
+}
+
+.accordion-body {
+    background-color: #2F3136;
+    /* Lighter than #1A1A1A */
+    padding: 0.5rem 0.75rem;
+    transition: background 0.2s;
+}
+
+.accordion-body a {
+    display: block;
+    color: #adb5bd;
+    text-decoration: none;
+    padding: 0.4rem 0.6rem;
+    border-radius: 4px;
+    transition: background 0.2s;
+    margin-bottom: 0.25rem;
+    font-size: 1rem;
+}
+
+.accordion-body a:hover,
+.accordion-body a.active {
+    background-color: #282B2E;
+    color: white;
+}
+
+/* Light Mode: Make the modules background lighter */
+body.light-mode .accordion-button {
+    background-color: #E0E0E0 !important;
+    color: #1A1A1A !important;
+}
+
+body.light-mode .accordion-button.collapsed {
+    background-color: #504f4a3c !important;
+}
+
+body.light-mode .accordion-body {
+    background-color: #ffffff;
+}
+
+body.light-mode .accordion-body a {
+    color: #1A1A1A;
+}
+
+body.light-mode .accordion-body a:hover,
+body.light-mode .accordion-body a.active {
+    background-color: #e0e0e061;
+    color: #1A1A1A;
+}
+
+/* -------------------------------------
+   CENTER CONTENT
+------------------------------------- */
+.center-content {
+    flex: 1;
+    overflow-y: auto;
+    padding: 1.5rem;
+    background-color: #1A1A1A;
+}
+
+.center-content h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.center-content p,
+ul,
+ol {
+    line-height: 1.6;
+    color: #d4d4d4;
+    font-size: 1.3rem;
+}
+
+/* Light Mode: Center Content Overrides */
+body.light-mode .center-content {
+    background-color: #ffffff;
+}
+
+body.light-mode .center-content p,
+body.light-mode .center-content ul,
+body.light-mode .center-content ol {
+    color: #1A1A1A;
+}
+
+/* -------------------------------------
+   RIGHT SIDEBAR
+------------------------------------- */
+.right-sidebar {
+    width: 300px;
+    min-width: 180px;
+    max-width: 50vw;
+    border-left: 1px solid #2a3948;
+    background-color: #2b2e35;
+    overflow: auto;
+    resize: horizontal;
+    /* allow horizontal resizing */
+    padding: 1rem;
+    position: relative;
+    /* for the handle */
+    transition: width 0.3s ease;
+}
+
+.right-sidebar h5 {
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+/* Light Mode: Right Sidebar Overrides */
+body.light-mode .right-sidebar {
+    background-color: #F5F5F5;
+    border-left: 1px solid #D6D6D6;
+}
+
+/* (CHANGED) Remove box from extra info => no background/border/radius */
+.right-sidebar .info-content {
+    padding: 0;
+    min-height: 200px;
+}
+
+/* -------------------------------------
+   RESIZE HANDLES
+------------------------------------- */
+/* Left handle */
+.left-resize-handle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 8px;
+    height: 100%;
+    cursor: ew-resize;
+    background: transparent;
+    z-index: 999;
+    /* keep it above modules */
+}
+
+/* Right handle */
+.right-resize-handle {
+    position: absolute;
+    top: 0;
+    left: -4px;
+    /* place it at the left boundary inside the right sidebar */
+    width: 8px;
+    height: 100%;
+    cursor: ew-resize;
+    background: transparent;
+}
+
+/* Common pseudo-element for both handles */
+.left-resize-handle::before,
+.right-resize-handle::before {
+    content: "";
+    display: block;
+    width: 2px;
+    /* default width */
+    height: 100%;
+    margin: 0 auto;
+    background: #444;
+    /* default line color */
+    transition: background 0.2s, width 0.2s;
+}
+
+/* Hover effect for both handles in Dark Mode */
+.left-resize-handle:hover::before,
+.right-resize-handle:hover::before {
+    background: #37742A;
+    width: 4px;
+    /* uniform 4px width on hover */
+}
+
+/* Hover effect for both handles in Light Mode (purple) */
+body.light-mode .left-resize-handle:hover::before,
+body.light-mode .right-resize-handle:hover::before {
+    background: rgb(92, 3, 124);
+    width: 4px;
+    /* uniform 4px width on hover */
+}
+
+/* -------------------------------------
+   SCROLLBARS
+------------------------------------- */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #2b2e35;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #3f4f5f;
+    border-radius: 4px;
+}
+
+/* Light Mode: Scrollbar Overrides */
+body.light-mode ::-webkit-scrollbar-track {
+    background: #E0E0E0;
+}
+
+body.light-mode ::-webkit-scrollbar-thumb {
+    background-color: #BDBDBD;
+}
+
+/* -------------------------------------
+   CLICKABLE TERMS IN THE READING
+------------------------------------- */
+.term {
+    color: #ffc107;
+    /* gold highlight */
+    cursor: pointer;
+    text-decoration: underline dotted;
+}
+
+.term:hover {
+    color: #ffcd39;
+}
+
+/* Light Mode: Clickable Terms Overrides */
+body.light-mode .term {
+    color: #0056b3;
+}
+
+body.light-mode .term:hover {
+    color: #003d80;
+}
+
+/* -------------------------------------
+   RESPONSIVE (Collapse left sidebar on smaller screens)
+------------------------------------- */
+@media (max-width: 768px) {
+    .left-sidebar {
+        position: absolute;
+        top: 60px;
+        /* just below the top nav */
+        bottom: 0;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+        z-index: 999;
+        /* on top of center content */
+        resize: none;
+        /* disable resize on small screens for simpler UX */
+    }
+
+    .left-sidebar.show {
+        transform: translateX(0);
+    }
+
+    .left-sidebar.collapsed {
+        transform: translateX(-100%) !important;
+    }
+
+    .main-container {
+        flex-direction: column;
+        /* left sidebar is out of flow on small screens */
+    }
+
+    .center-content {
+        flex: 1;
+        padding: 1rem;
+    }
+
+    .right-sidebar {
+        width: 100% !important;
+        min-width: 100% !important;
+        max-width: 100% !important;
+        resize: none;
+        border-left: none;
+        border-top: 1px solid #2a3948;
+        order: 3;
+        /* put right sidebar after center content */
+        min-height: 300px;
+    }
+
+    .right-resize-handle {
+        display: none;
+        /* no handle on mobile for simpler UX */
+    }
+}
+
+/* -------------------------------------
+   RIGHT SIDEBAR ADDITIONAL INFO
+------------------------------------- */
+.term-info-heading {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.term-info-content {
+    font-size: 1em;
+}
+
+/* Custom list for Notes: Need to add the dark mode version */
+.custom-container {
+    max-width: 950px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+.custom-heading {
+    color: #2c3e50;
+    font-size: 1.4rem;
+    margin: 2rem 0 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid #ecf0f1;
+    position: relative;
+}
+
+.custom-heading::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background: #3498db;
+}
+
+.custom-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 1.5rem 0;
+}
+
+.custom-list li {
+    position: relative;
+    padding-left: 32px;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.custom-list li i {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    color: #3498db;
+    font-size: 1.1rem;
+}
+
+.section-divider {
+    height: 1px;
+    background: #ecf0f1;
+    margin: 2rem 0;
+    border: 0;
+}
+
+.custom-highlight {
+    background: #f8f9fa;
+    padding: 1.25rem;
+    border-left: 3px solid #3498db;
+    margin: 1.5rem 0;
+    border-radius: 4px;
+}
+
+.nested-list {
+    margin-left: 1.5rem;
+    border-left: 2px solid #ecf0f1;
+    padding-left: 1rem;
+}
+
+.image-container {
+    max-width: 100%;
+    /* Ensures container doesn’t overflow its parent */
+    margin: 0 auto;
+    /* Centers container if it’s narrower than the parent */
+    text-align: center;
+    /* Centers image horizontally inside the container */
+}
+
+.image-container img {
+    /* .img-fluid from Bootstrap already sets these, but if you need custom overrides: */
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* -------------------------------------
+   Dark Mode Overrides for Custom List for Notes
+------------------------------------- */
+/* Applies when not in light mode (i.e. default dark mode) */
+body:not(.light-mode) .custom-container {
+    background: #1b2025;
+    color: #ecf0f1;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+}
+
+body:not(.light-mode) .custom-heading {
+    color: #ecf0f1;
+    border-bottom: 2px solid #34495e;
+}
+
+body:not(.light-mode) .custom-heading::after {
+    background: #FFCD39;
+}
+
+body:not(.light-mode) .custom-list li i {
+    color: #FFCD39;
+}
+
+body:not(.light-mode) .section-divider {
+    background: #34495e;
+}
+
+body:not(.light-mode) .custom-highlight {
+    background: #34495e;
+    border-left: 3px solid #FFCD39;
+    color: #ecf0f1;
+}
+
+body:not(.light-mode) .nested-list {
+    border-left: 2px solid #34495e;
+}
